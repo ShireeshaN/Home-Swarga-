@@ -152,7 +152,7 @@ h6 {
 
 .header .branding {
  
- position: fixed;
+
 }
 
 .header .logo {
@@ -161,7 +161,8 @@ h6 {
 
 .header .logo img {
   width:100px;
-  margin-right: 8px;
+  height: auto;
+  margin-inline: 8px;
 }
 
 .header .logo h1 {
@@ -283,6 +284,17 @@ h6 {
   }
 }
 
+.navbar-container{
+  padding: 120px 0;
+  position: relative;
+  clip-path: inset(0);
+}
+
+/* .logo-container .logo-img{
+  margin-inline: 20px;
+  width: 100%;
+} */
+
 /* Mobile Navigation */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
@@ -362,7 +374,7 @@ h6 {
   }
 
   .navmenu .dropdown ul {
-    position: static;
+   
     display: none;
     z-index: 99;
     padding: 10px 0;
@@ -395,7 +407,7 @@ h6 {
   }
 
   .mobile-nav-active .navmenu {
-    position: fixed;
+  
     overflow: hidden;
     inset: 0;
     background: rgba(33, 37, 41, 0.8);
@@ -459,7 +471,7 @@ h6 {
 /* Listing Dropdown - Mobile */
 @media (max-width: 1199px) {
   .navmenu .listing-dropdown ul {
-    position: static;
+   
     display: none;
     z-index: 99;
     padding: 10px 0;
