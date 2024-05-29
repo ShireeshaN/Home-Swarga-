@@ -152,7 +152,7 @@ h6 {
 
 .header .branding {
  
- position: fixed;
+
 }
 
 .header .logo {
@@ -362,7 +362,7 @@ h6 {
   }
 
   .navmenu .dropdown ul {
-    position: static;
+   
     display: none;
     z-index: 99;
     padding: 10px 0;
@@ -395,7 +395,7 @@ h6 {
   }
 
   .mobile-nav-active .navmenu {
-    position: fixed;
+  
     overflow: hidden;
     inset: 0;
     background: rgba(33, 37, 41, 0.8);
@@ -459,7 +459,7 @@ h6 {
 /* Listing Dropdown - Mobile */
 @media (max-width: 1199px) {
   .navmenu .listing-dropdown ul {
-    position: static;
+   
     display: none;
     z-index: 99;
     padding: 10px 0;
