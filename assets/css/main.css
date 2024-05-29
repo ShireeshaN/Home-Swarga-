@@ -1149,8 +1149,8 @@ section,
 }
 
 .services .service-item:hover {
-  background: var(--accent-color);
-  border-color: var(--accent-color);
+  background: rgb(25, 24, 77);
+  border-color: rgb(25, 24, 77);
 }
 
 .services .service-item:hover .icon {
@@ -1168,6 +1168,36 @@ section,
 .services .service-item:hover h3,
 .services .service-item:hover p {
   color: var(--contrast-color);
+}
+
+.services .service-item:hover .read-more {
+  background: #008B24;
+  color: white;
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 12px 30px;
+  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services .service-item:hover .read-more i {
+  font-size: 18px;
+  margin-left: 5px;
+  line-height: 0;
+  transition: 0.3s;
+}
+
+.services .service-item:hover .read-more:hover {
+  background:#008B24;
+  padding-right: 25px;
+}
+
+.services .service-item:hover .read-more:hover i {
+  margin-left: 10px;
 }
 
 /*--------------------------------------------------------------
@@ -1464,7 +1494,7 @@ section,
 }
 
 .team .member img {
-  border-radius: 50%;
+  
   max-width: 60%;
   margin: 30px 0;
 }
