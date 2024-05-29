@@ -161,7 +161,8 @@ h6 {
 
 .header .logo img {
   width:100px;
-  margin-right: 8px;
+  height: auto;
+  margin-inline: 8px;
 }
 
 .header .logo h1 {
@@ -282,6 +283,17 @@ h6 {
     visibility: visible;
   }
 }
+
+.navbar-container{
+  padding: 120px 0;
+  position: relative;
+  clip-path: inset(0);
+}
+
+/* .logo-container .logo-img{
+  margin-inline: 20px;
+  width: 100%;
+} */
 
 /* Mobile Navigation */
 @media (max-width: 1199px) {
