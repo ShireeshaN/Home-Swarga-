@@ -99,11 +99,11 @@ h6 {
   color: var(--default-color);
   transition: all 0.5s;
   z-index: 997;
-  background-color: var(--background-color);
+  
 }
 
 .header .topbar {
-  background-color: var(--background-color);
+  
   height: 40px;
   padding: 0;
   font-size: 14px;
@@ -151,9 +151,8 @@ h6 {
 }
 
 .header .branding {
-  /* background-color: color-mix(in srgb, var(--default-color), transparent 95%); */
-  background-color: white;
-  min-height: 50px;
+ 
+ position: fixed;
 }
 
 .header .logo {
@@ -221,7 +220,7 @@ h6 {
   .navmenu .active,
   .navmenu .active:focus {
     color: var(--contrast-color);
-    background-color:#19184D;
+  
     padding:10px;
     border-radius: 10px;;
   }
@@ -889,8 +888,8 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  --background-color: #000000;
-  --default-color: #ffffff;
+  
+  background: transparent;
   --heading-color: #ffffff;
   width: 100%;
   min-height: 100vh;
@@ -913,7 +912,7 @@ section,
 
 .hero:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 30%);
+  background: rgba(20, 20, 95, 0.7);
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -953,6 +952,10 @@ section,
   color: var(--contrast-color);
   background: var(--accent-color);
   border-color: var(--accent-color);
+}
+
+.professional-bg-container{
+  position: relative;
 }
 
 .professional-bg-container::after {
