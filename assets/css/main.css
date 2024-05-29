@@ -151,7 +151,8 @@ h6 {
 }
 
 .header .branding {
-  background-color: color-mix(in srgb, var(--default-color), transparent 95%);
+  /* background-color: color-mix(in srgb, var(--default-color), transparent 95%); */
+  background-color: white;
   min-height: 50px;
 }
 
@@ -160,12 +161,12 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  width:100px;
   margin-right: 8px;
 }
 
 .header .logo h1 {
-  font-size: 30px;
+  font-size: 60px;
   margin: 0;
   font-weight: 700;
   text-transform: uppercase;
@@ -195,7 +196,7 @@ h6 {
 
   .navmenu a,
   .navmenu a:focus {
-    color: var(--nav-color);
+    color:black;
     padding: 20px 15px;
     margin-left: 2px;
     font-size: 16px;
@@ -220,7 +221,9 @@ h6 {
   .navmenu .active,
   .navmenu .active:focus {
     color: var(--contrast-color);
-    background-color: var(--nav-hover-color);
+    background-color:#19184D;
+    padding:10px;
+    border-radius: 10px;;
   }
 
   .navmenu .dropdown ul {
@@ -342,7 +345,7 @@ h6 {
 
   .navmenu a i:hover,
   .navmenu a:focus i:hover {
-    background-color: var(--accent-color);
+    background-color: var(--accent-color)\;
     color: var(--contrast-color);
   }
 
@@ -1708,3 +1711,4 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
