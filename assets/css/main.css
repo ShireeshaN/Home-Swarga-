@@ -112,7 +112,7 @@ h6 {
 
 .header .topbar .contact-info i {
   font-style: normal;
-  color: var(--accent-color);
+  color: white;
 }
 
 .header .topbar .contact-info i a,
@@ -161,7 +161,7 @@ h6 {
 
 .header .logo img {
   width:100px;
-  height: auto;
+  height: 60px;
   margin-inline: 8px;
 }
 
@@ -356,7 +356,7 @@ h6 {
 
   .navmenu a i:hover,
   .navmenu a:focus i:hover {
-    background-color: var(--accent-color)\;
+    background-color: var(--accent-color);
     color: var(--contrast-color);
   }
 
@@ -410,12 +410,17 @@ h6 {
   
     overflow: hidden;
     inset: 0;
-    background: rgba(33, 37, 41, 0.8);
+    /* background: rgba(33, 37, 41, 0.8); */
     transition: 0.3s;
+    padding: 20px;
   }
 
   .mobile-nav-active .navmenu>ul {
     display: block;
+  }
+  .mobile-nav-active .navmenu>ul li{
+    display: block;
+    /* color: #000000; */
   }
 }
 
@@ -1026,7 +1031,7 @@ section,
 }
 
 .about .content .read-more {
-  background: var(--accent-color);
+  background: #19184D;
   color: var(--contrast-color);
   font-family: var(--heading-font);
   font-weight: 500;
