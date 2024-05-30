@@ -1893,3 +1893,7 @@ section,
   /* Add your styles here */
 }
 
+.border-btm{
+  border-bottom: 2px solid #19184D;
+  display: inline-block;
+}
