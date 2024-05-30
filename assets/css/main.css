@@ -1810,6 +1810,20 @@ section,
 .contact .contact-form{
   width:100px;
 }
+.contact-head{
+  font-size:28px;
+  font-weight: bold;
+  color: rgb(25, 24, 77);
+  font-family: "Yanone kaffeesatz",sans-serif";
+  padding-bottom: 20px;
+}
+.contact .php-email-form button[type=submit]{
+  background-color: rgb(25, 24, 77);
+}
+.send-message{
+  background-color:rgb(25, 24, 77) ;
+  color: white;
+}
 
 .contact .php-email-form button[type=submit]:hover {
   background: #19184D;
