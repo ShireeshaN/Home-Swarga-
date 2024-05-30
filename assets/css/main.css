@@ -1644,7 +1644,7 @@ section,
 
 .team .member img {
   
-  max-width: 60%;
+  max-width: 100%;
   margin: 30px 0;
 }
 
@@ -1810,6 +1810,20 @@ section,
 .contact .contact-form{
   width:100px;
 }
+.contact-head{
+  font-size:28px;
+  font-weight: bold;
+  color: rgb(25, 24, 77);
+  font-family: "Yanone kaffeesatz",sans-serif";
+  padding-bottom: 20px;
+}
+.contact .php-email-form button[type=submit]{
+  background-color: rgb(25, 24, 77);
+}
+.send-message{
+  background-color:rgb(25, 24, 77) ;
+  color: white;
+}
 
 .contact .php-email-form button[type=submit]:hover {
   background: #19184D;
@@ -1893,3 +1907,7 @@ section,
   /* Add your styles here */
 }
 
+.border-btm{
+  border-bottom: 2px solid #19184D;
+  display: inline-block;
+}
