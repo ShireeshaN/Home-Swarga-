@@ -116,15 +116,63 @@
 
       <div class="container " data-aos="fade-up" data-aos-delay="100">
         <div class="row justify-content-start">
-          <div class="col-lg-8">
+          <div class="row gy-4" >
+          <div class="col-lg-6 ">
             <h2 class="">Pay For Quality</h2>
             <h2 class="">Not For Our</h2>
             <h2 class="">Profit</h2>
             
             
+            
           </div>
+          
+       
+        <div class="col-lg-6 contact-form">
+          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+
+
+              <div class="col-lg-6">
+                <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="400">
+                  <div class="row gy-4">
+    
+                    <div class="col-md-6">
+                      <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                    </div>
+    
+                    <div class="col-md-6 ">
+                      <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                    </div>
+    
+                    <div class="col-md-12">
+                      <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                    </div>
+    
+                    <div class="col-md-12">
+                      <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                    </div>
+    
+                    <div class="col-md-12 text-center">
+                      <!-- <div class="loading">Loading</div>
+                      <div class="error-message"></div>
+                      <div class="sent-message">Your message has been sent. Thank you!</div> -->
+    
+                      <button type="submit">Send Message</button>
+                    </div>
+    
+                  </div>
+                </form>
+              </div>
+             
+             
+             
+            </div>
+          </div><!-- End Service Item -->
         </div>
+        <!-- End Contact Form -->
       </div>
+    </div>
+  </div>
 
     </section>
     <!-- /Hero Section -->
@@ -241,11 +289,11 @@
   
 
     <!-- About Section -->
-    <section class="about section professional-bg-container" style="background-image:url(assets/img/luxury-modern-living-room-with-comfortable-sofa-generated-by-ai-scaled.jpg) ;background-size: cover; >
-    <div></div>
+    <section class="about section professional-bg-container" style="background-image:url(assets/img/luxury-modern-living-room-with-comfortable-sofa-generated-by-ai-scaled.jpg)" style="background-size: cover;" >
+    
 
       <!-- Section Title -->
-      <div class="container section-title data-aos="fade-up">
+      <div class="container section-title" data-aos="fade-up">
         <span class="">About Us</span>
         <h2 class="text-white about-header">About Us<br></h2>
         
@@ -280,60 +328,7 @@
 
    
 
-    <!-- Clients Section -->
-    <section class="clients section">
-
-      <div class="container">
-
-        <div class="swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 2,
-                  "spaceBetween": 40
-                },
-                "480": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 60
-                },
-                "640": {
-                  "slidesPerView": 4,
-                  "spaceBetween": 80
-                },
-                "992": {
-                  "slidesPerView": 6,
-                  "spaceBetween": 120
-                }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Clients Section -->
+   
 
     <!-- Services Section -->
     <section class="services section">
@@ -581,6 +576,61 @@
 
     </section><!-- /Portfolio Section -->
 
+     <!-- Clients Section -->
+     <section class="clients section">
+
+      <div class="container">
+
+        <div class="swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 40
+                },
+                "480": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 60
+                },
+                "640": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 80
+                },
+                "992": {
+                  "slidesPerView": 6,
+                  "spaceBetween": 120
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Clients Section -->
+
     <!-- Pricing Section -->
     <section  class="pricing section">
 
@@ -730,7 +780,7 @@
       <div class="container section-title" data-aos="fade-up">
         <span class="">Contact</span>
         <h2 class="">Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+       
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -741,7 +791,7 @@
             <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
               <i class="bi bi-geo-alt"></i>
               <h3>Address</h3>
-              <p>A108 Adam Street, New York, NY 535022</p>
+              <p>Rock Town colony, Nagole, Hyderabad, Telangana</p>
             </div>
           </div><!-- End Info Item -->
 
@@ -749,7 +799,7 @@
             <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
               <i class="bi bi-telephone"></i>
               <h3>Call Us</h3>
-              <p>+1 5589 55488 55</p>
+              <p>+ 91 9063666369 </p>
             </div>
           </div><!-- End Info Item -->
 
@@ -757,7 +807,7 @@
             <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
               <i class="bi bi-envelope"></i>
               <h3>Email Us</h3>
-              <p>info@example.com</p>
+              <p>hello@homeswarga.com</p>
             </div>
           </div><!-- End Info Item -->
 
@@ -765,7 +815,7 @@
 
         <div class="row gy-4 mt-1">
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 400px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15228.976847984206!2d78.554893!3d17.400064!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb98c9fc0b2dfb%3A0x3de29da73d0c7f7b!2sHome%20Swarga!5e0!3m2!1sen!2sus!4v1717049293378!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
           </div><!-- End Google Maps -->
 
           <div class="col-lg-6">
