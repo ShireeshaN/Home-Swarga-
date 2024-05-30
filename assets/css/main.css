@@ -150,6 +150,12 @@ h6 {
   color: var(--accent-color);
 }
 
+<<<<<<< HEAD
+=======
+.header .branding {
+ padding-block: 20px;
+}
+>>>>>>> 9d445fb773d8e00dcbd439c551a9f3b047cc8ac4
 
 
 
@@ -868,6 +874,8 @@ section,
 }
 .about .content-top{
   z-index: 100;
+  position: relative;
+  /* position: absolute; */
 }
 
 .section-title span {
@@ -914,6 +922,7 @@ section,
   display: flex;
   align-items: center;
   justify-content: center;
+  clip-path: inset(0);
 }
 
 .hero img {
@@ -1120,7 +1129,7 @@ section,
 }
 
 .about .content .read-more {
-  background: #19184D;
+  background: white;
   color: var(--contrast-color);
   font-family: var(--heading-font);
   font-weight: 500;
@@ -1147,6 +1156,14 @@ section,
 
 .about .content .read-more:hover i {
   margin-left: 10px;
+}
+.about .about-header{
+  z-index: 100;
+  position: relative;
+  text-align: center;
+  padding-bottom:23px ;
+  font-weight: bold;
+
 }
 
 /*--------------------------------------------------------------
