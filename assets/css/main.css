@@ -528,6 +528,10 @@ h6 {
   padding: 0;
   font-weight: 700;
 }
+.pic{
+  width:40px;
+  height:60vh;
+}
 
 .footer .footer-about p {
   font-size: 14px;
@@ -854,7 +858,7 @@ section,
   padding: 30px 0;
   margin-bottom: 30px;
   position: relative;
-}
+  z-index: 100;}
 
 .section-title h2 {
   font-size: 32px;
@@ -864,6 +868,9 @@ section,
   padding-bottom: 0;
   position: relative;
   z-index: 2;
+}
+.about .content-top{
+  z-index: 100;
 }
 
 .section-title span {
