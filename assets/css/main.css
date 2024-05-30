@@ -112,7 +112,7 @@ h6 {
 
 .header .topbar .contact-info i {
   font-style: normal;
-  color: var(--accent-color);
+  color: white;
 }
 
 .header .topbar .contact-info i a,
@@ -1024,7 +1024,7 @@ section,
 }
 
 .about .content .read-more {
-  background: var(--accent-color);
+  background: #19184D;
   color: var(--contrast-color);
   font-family: var(--heading-font);
   font-weight: 500;
