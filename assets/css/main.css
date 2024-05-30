@@ -151,8 +151,7 @@ h6 {
 }
 
 .header .branding {
- 
-
+ padding-block: 50px;
 }
 
 .header .logo {
@@ -161,8 +160,9 @@ h6 {
 
 .header .logo img {
   width:100px;
-  height: 60px;
+  height: auto;
   margin-inline: 8px;
+  object-fit: cover;
 }
 
 .header .logo h1 {
