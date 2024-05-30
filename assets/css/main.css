@@ -151,7 +151,7 @@ h6 {
 }
 
 .header .branding {
- padding-block: 50px;
+ padding-block: 20px;
 }
 
 .header .logo {
@@ -924,6 +924,7 @@ section,
   display: flex;
   align-items: center;
   justify-content: center;
+  clip-path: inset(0);
 }
 
 .hero img {
