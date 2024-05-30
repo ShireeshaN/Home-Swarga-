@@ -68,13 +68,13 @@ body {
 }
 
 a {
-  color: var(--accent-color);
+  color: #014AEE;
   text-decoration: none;
   transition: 0.3s;
 }
 
 a:hover {
-  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  color:#014AEE;
   text-decoration: none;
 }
 
@@ -520,7 +520,7 @@ h6 {
   justify-content: center;
   align-items: center;
   background-color: color-mix(in srgb, var(--default-color), transparent 95%);
-  border-top: 4px solid var(--accent-color);
+  border-top: 4px solid #19184D;
   padding: 30px 20px;
 }
 
@@ -553,14 +553,14 @@ h6 {
   border-radius: 50%;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
   font-size: 16px;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: #014AEE;
   margin-right: 10px;
   transition: 0.3s;
 }
 
 .footer .social-links a:hover {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
+  color: #014AEE;
+  border-color: #014AEE;
 }
 
 .footer h4 {
@@ -603,7 +603,7 @@ h6 {
 }
 
 .footer .footer-links ul a:hover {
-  color: var(--accent-color);
+  color:#014AEE;
 }
 
 .footer .footer-contact p {
@@ -642,19 +642,19 @@ h6 {
   font-size: 16px;
   padding: 0 20px;
   margin: -8px -9px -8px 0;
-  background: var(--accent-color);
+  background: #19184D;
   color: var(--contrast-color);
   transition: 0.3s;
   border-radius: 0;
 }
 
 .footer .footer-newsletter .newsletter-form input[type=submit]:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background:#014AEE;
 }
 
 .footer .footer-newsletter .error-message {
   display: none;
-  background: #df1529;
+  background: #19184D;
   color: #ffffff;
   text-align: left;
   padding: 15px;
@@ -676,7 +676,7 @@ h6 {
 
 .footer .footer-newsletter .loading {
   display: none;
-  background: var(--background-color);
+  background: #19184D;
   text-align: center;
   padding: 15px;
   margin-top: 10px;
@@ -689,8 +689,8 @@ h6 {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid var(--accent-color);
-  border-top-color: var(--background-color);
+  border: 3px solid #19184D;
+  border-top-color: #19184D;
   animation: subscription-loading 1s linear infinite;
 }
 
@@ -764,7 +764,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background-color: var(--accent-color);
+  background-color: #19184D;
   width: 40px;
   height: 40px;
   transition: all 0.4s;
@@ -777,7 +777,7 @@ h6 {
 }
 
 .scroll-top:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background-color: #19184D;
   color: var(--contrast-color);
 }
 
@@ -1585,7 +1585,7 @@ section,
 }
 
 .contact .info-item i {
-  color: var(--accent-color);
+  color: #19184D;
   width: 56px;
   height: 56px;
   font-size: 24px;
@@ -1594,7 +1594,7 @@ section,
   align-items: center;
   transition: all 0.3s ease-in-out;
   border-radius: 50%;
-  border: 2px dotted color-mix(in srgb, var(--accent-color), transparent 40%);
+  border: 2px dotted #19184D;
 }
 
 .contact .info-item h3 {
@@ -1656,8 +1656,8 @@ section,
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid var(--accent-color);
-  border-top-color: var(--background-color);
+  border: 3px solid #19184D;
+  border-top-color: #19184D;
   animation: animate-loading 1s linear infinite;
 }
 
@@ -1670,13 +1670,13 @@ section,
   border-radius: 0;
   color: var(--default-color);
   background-color: color-mix(in srgb, var(--background-color), transparent 50%);
-  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+  border-color: #19184D;
 }
 
 .contact .php-email-form input[type=text]:focus,
 .contact .php-email-form input[type=email]:focus,
 .contact .php-email-form textarea:focus {
-  border-color: var(--accent-color);
+  border-color: #19184D;
 }
 
 .contact .php-email-form input[type=text]::placeholder,
@@ -1687,15 +1687,18 @@ section,
 
 .contact .php-email-form button[type=submit] {
   color: var(--contrast-color);
-  background: var(--accent-color);
+  background: #19184D;
   border: 0;
   padding: 8px 30px 10px 30px;
   transition: 0.4s;
   border-radius: 0;
 }
+.contact .contact-form{
+  width:100px;
+}
 
 .contact .php-email-form button[type=submit]:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background: #19184D;
 }
 
 @keyframes animate-loading {
