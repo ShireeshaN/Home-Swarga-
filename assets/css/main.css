@@ -876,6 +876,8 @@ section,
 }
 .about .content-top{
   z-index: 100;
+  position: relative;
+  /* position: absolute; */
 }
 
 .section-title span {
