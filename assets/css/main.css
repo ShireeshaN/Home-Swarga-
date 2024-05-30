@@ -1034,7 +1034,7 @@ section,
 }
 
 .about .content .read-more {
-  background: #19184D;
+  background: white;
   color: var(--contrast-color);
   font-family: var(--heading-font);
   font-weight: 500;
@@ -1061,6 +1061,14 @@ section,
 
 .about .content .read-more:hover i {
   margin-left: 10px;
+}
+.about .about-header{
+  z-index: 100;
+  position: relative;
+  text-align: center;
+  padding-bottom:23px ;
+  font-weight: bold;
+
 }
 
 /*--------------------------------------------------------------
