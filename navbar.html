@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Home Swarga</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <nav class="nav-bar d-flex justify-content-between px-5 bg-dark">
+            <a href="index.html">
+                <img src="/assets/img/newlogo.png" alt="" class="w-25">
+            </a>
+            <ul class="nav-bar-menu">
+                <li>
+                    <a class="text-primary" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="text-primary" href="about.html">About</a>
+                </li>
+                <li>
+                    <a class="text-primary" href="service.html">Service</a>
+                </li>
+                <li>
+                    <a class="text-primary" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <div class="d-lg-none menu-icon d-flex justify-content-center align-items-center">
+                <i class="mobile-nav-toggle-btn bi bi-list mt-3"></i>
+            </div>
+        </nav>
+    </div>
+
+    <style>
+        .nav-bar ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        @media (max-width: 992px) {
+            .nav-bar ul {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background-color: #343a40; /* Match the bg-dark class */
+                position: absolute;
+                top: 60px; /* Adjust based on your nav height */
+                left: 0;
+                z-index: 1000;
+            }
+            .nav-bar ul.show {
+                display: flex;
+            }
+            .nav-bar ul li {
+                width: 100%;
+                text-align: center;
+                padding: 10px 0;
+            }
+        }
+        .text-primary {
+            color: #da0000 !important;
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle-btn');
+            const navMenu = document.querySelector('.nav-bar-menu');
+
+            function toggleMobileNav() {
+                navMenu.classList.toggle('show');
+                mobileNavToggleBtn.classList.toggle('bi-list');
+                mobileNavToggleBtn.classList.toggle('bi-x');
+            }
+
+            mobileNavToggleBtn.addEventListener('click', toggleMobileNav);
+
+            document.querySelectorAll('.nav-bar-menu a').forEach(navLink => {
+                navLink.addEventListener('click', () => {
+                    if (navMenu.classList.contains('show')) {
+                        toggleMobileNav();
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
