@@ -1939,3 +1939,155 @@ section,
   border-bottom: 2px solid #19184D;
   display: inline-block;
 }
+
+
+.demo{
+  color: #19184D;
+  /* margin-left:60px; */
+  margin-bottom: 20px;
+  
+  text-decoration: underline;
+}
+.dog ul{
+  padding-left: 10px;
+  color: #ffffff;
+}
+.super{
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.missions-img{
+  border-radius: 20px;
+  width: 90%;
+}
+
+.icon{
+  color: #007aff;
+  font-size: 50px;
+  align-self: center;
+  padding-bottom: 20px;
+}
+.icon:hover{
+  color: #000000;
+}
+.contact-detail::before {
+  position: absolute;
+  content: "";
+  height: 50%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgb(210, 243, 235, 1), rgba(230, 250, 245, .3));
+  background-size: cover;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.contact-map {
+  background: #19184D;
+}
+
+.contact-form {
+  background: #19184D;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 100%;
+}
+
+.required::after {
+  content: "*";
+  color: red;
+}
+
+.contact-page .form-div {
+  padding: 0px 30px;
+  overflow: hidden;
+}
+
+.contact-page .form-div form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-page .form-div form .input {
+
+  padding: 10px 10px;
+  width: 100%;
+  color: #fff;
+  font-size: 22px;
+  border: none;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: inset 5px 5px 10px #fff,
+      inset -5px -5px 10px #fff;
+
+}
+
+.contact-page .form-div form .form-btn {
+  background: #ffffff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  /* width: 100%; */
+  color: black;
+  font-size: 18px;
+  margin-top: 10px;
+
+}
+
+.btn-square {
+  width: 38px;
+  height: 38px;
+}
+
+.btn-sm-square {
+  width: 32px;
+  height: 32px;
+}
+
+.btn-md-square {
+  width: 46px;
+  height: 46px;
+}
+.text-secondary-color{
+  color:#0000
+}
+
+.btn-lg-square {
+  width: 58px;
+  height: 58px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-md-square,
+.btn-lg-square {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+}
+
