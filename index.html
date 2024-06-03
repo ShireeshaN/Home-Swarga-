@@ -27,7 +27,13 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+      .member {
+          position: relative;
+          display: inline-block;
+      }
+  </style>
 </head>
 
 <body class="index-page">
@@ -59,44 +65,42 @@
         <div class="branding d-flex align-items-center ">
     
           <div class="container  position-relative d-flex align-items-center justify-content-between  px-5">
-            <div class="logo-container">
+            <div class="logo-container text-center">
               <a href="index.html" class="logo">
                 <!-- Uncomment the line below if you also wish to use an image logo -->
+                <div class="bgss">
                  <img src="assets/img/newlogo.png" alt="logo" class="logo-img">
+                </div>
                 <!-- <h1 class="sitename">Day</h1> -->
                 <!-- <img src="assets/img/logo.png" alt=""> -->
                 
               </a>
             </div>
             
-    
+    <style>
+      .bgss{
+        background-color: white;
+        border-radius: 70px;
+        height:130px;
+        width:130px;
+        padding-top: 20px;
+        text-align: center;
+        
+      }
+    </style>
             <nav id="navmenu" class="navmenu" >
               <ul>
                 <li><a href="index.html" class="active text-white">Home</a></li>
-                <li><a href="about.html" class=" text-white" >About</a></li>
+                <li><a href="about.html" class=" text-white" >Why We</a></li>
                
                
               
-                <li class="dropdown"><a href="service.html" class=" text-white"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                    <!-- <li><a href="#">Dropdown 1</a></li>
-                    <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                      <ul>
-                        <li><a href="#">Deep Dropdown 1</a></li>
-                        <li><a href="#">Deep Dropdown 2</a></li>
-                        <li><a href="#">Deep Dropdown 3</a></li>
-                        <li><a href="#">Deep Dropdown 4</a></li>
-                        <li><a href="#">Deep Dropdown 5</a></li>
-                      </ul>
-                    </li> -->
-                    <li><a href="#"></a></li>
-                    <li><a href="#">Dropdown 3</a></li>
-                    <li><a href="#">Dropdown 4</a></li>
-                  </ul>
+                <li class="dropdown"><a href="service.html" class=" text-white"><span>Services</span> </a>
+                  
                 </li>
                 <li><a href="project.html" class=" text-white">Projects</a></li>
                 <li><a href="join-as-a-Professional.html" class=" text-white">Join as a Professional</a></li>
-                <li><a href="gallery.html" class=" text-white">Gallery</a></li>
+                
                 <li><a href="contact.html" class=" text-white">Contact</a></li>
               </ul>
               <div class="d-flex justify-content-center align-items-center">
@@ -135,20 +139,18 @@
               </div>
               <div class="form-group pb-3">
                 
-                <input type="email" class="form-control" id="email" placeholder="Email" required>
+                <input type="email" class="form-control" id="email" placeholder="Phone No" required>
               </div>
               <div class="form-group pb-3">
                
-                <input type="text" class="form-control" id="subject" placeholder="Enter Subject" required>
-              </div>
-              <div class="form-group pb-3">
-                
-                <textarea class="form-control" id="message" rows="5" placeholder="Message" required></textarea>
+                <input type="text" class="form-control" id="subject" placeholder="Site Location" required>
               </div>
               <button type="submit" class="btn btn-primary btn-block "><a href="contact.html" class="text-white">Send Message</button></a>
             </form>
             </div>
           </div>
+
+          
     </div>
   </div>
   <style>
@@ -181,6 +183,8 @@
     </section>
     <!-- /Hero Section -->
 
+
+
     <!-- Team Section -->
     <section  class="team section">
 
@@ -195,143 +199,462 @@
       <div class="container">
 
         <div class="row">
-
+<!--2bhk-->
           <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
-              <img src="assets/img/team/estate-modern-apartment.jpg" class="img-fluid" alt="">
-              <div class="member-content">
-                <h4>2 BHK</h4>
-                <span>Residential</span>
-                <p>
-                  BUDGET FRIENDLY
-                </p>
-                <a href="project.html" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-                <!-- <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div> -->
-              </div>
+                <img src="assets/img/team/estate-modern-apartment.jpg" class="img-fluid" alt="" id="hoverImage">
+                <div class="member-content">
+                    <h4>2 BHK</h4>
+                    <span>Residential</span>
+                    <div class="p-2">
+                        <button class="btn btn-info">BUDGET FRIENDLY</button>
+                    </div>
+                    <div class="p-2">
+                        <button class="btn btn-info">VALUE FOR MONEY</button>
+                    </div>
+                    <div class="p-2">
+                        <button class="btn btn-info">END - TO - END</button>
+                    </div>
+                </div>
             </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="member">
-              <img src="assets/img/team/estate-family-home.jpg" class="img-fluid" alt="">
-              <div class="member-content">
-                <h4>3 BHK</h4>
-                <span>Residential</span>
-                <p>
-                  BUDGET FRIENDLY<br/>
-                  VALUE FOR MONEY<br/>
-                  END - TO - END
-                </p>
-                <a href="project.html" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-                <!-- <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div> -->
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="member">
-              <img src="assets/img/team/estate-elegant-flat.jpg" class="img-fluid" alt="">
-              <div class="member-content">
-                <h4>Villa/Home</h4>
-                <span>Residential</span>
-                <p>
-                  BUDGET FRIENDLY<br/>
-                  VALUE FOR MONEY<br/>
-                  END - TO - END
-                </p>
-                <a href="project.html" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-                <!-- <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div> -->
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="member">
-              <img src="assets/img/team/modern-apartment.jpg" class="img-fluid" alt="">
-              <div class="member-content">
-                <h4>Commercial</h4>
-                <span>Commercial</span>
-                <p>
-                  GET FREE ESTIMATE
-                </p>
-                <a href="project.html" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-                <!-- <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div> -->
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
         </div>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="hoverModal" tabindex="-1" aria-labelledby="hoverModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="hoverModalLabel">2 BHK</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                This is a 2 BHK residential apartment.
+              </div>
+              <div class="col-lg">
+                <div class="containers bg-white rounded p-3">
+                  <h4 class="text-center text-dark pt-4 pb-3">Get Package Offers</h4>
+                <form>
+                  <div class="form-group pb-3">
+              
+                    <input type="text" class="form-control" id="name" placeholder="Name" required>
+                  </div>
+                  <div class="form-group pb-3">
+                    
+                    <input type="email" class="form-control" id="email" placeholder="Phone No" required>
+                  </div>
+                  <div class="form-group pb-3">
+                   
+                    <input type="text" class="form-control" id="subject" placeholder="Site Location" required>
+                  </div>
+    
+                 <!-- <div class="form-group pb-3">
+                    <textarea class="form-control" id="message" rows="5" placeholder="Message" required></textarea>
+                  </div>-->
+    
+                  <button type="submit" class="btn btn-primary btn-block "><a href="contact.html" class="text-white">Send Message</button></a>
+                </form>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var hoverImage = document.getElementById('hoverImage');
+                var hoverModal = new bootstrap.Modal(document.getElementById('hoverModal'));
+        
+                hoverImage.addEventListener('mouseenter', function() {
+                    hoverModal.show();
+                });
+        
+                var closeButtons = document.querySelectorAll('[data-dismiss="modal"]');
+                closeButtons.forEach(function(button) {
+                    button.addEventListener('click', function() {
+                        hoverModal.hide();
+                    });
+                });
+            });
+        </script><!-- 2bhk -->
+          
 
+        <!--3bhk-->
+        <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+          <div class="member">
+              <img src="assets/img/team/estate-family-home.jpg" class="img-fluid" alt="" id="hover1Image">
+              <div class="member-content">
+                  <h4>3 BHK</h4>
+                  <span>Residential</span>
+                  <div class="p-2">
+                      <button class="btn btn-info">BUDGET FRIENDLY</button>
+                  </div>
+                  <div class="p-2">
+                      <button class="btn btn-info">VALUE FOR MONEY</button>
+                  </div>
+                  <div class="p-2">
+                      <button class="btn btn-info">END - TO - END</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="hoverModal1" tabindex="-1" aria-labelledby="hoverModal1Label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="hoverModal1Label">3 BHK</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              This is a 3 BHK residential apartment.
+            </div>
+            <div class="col-lg">
+              <div class="containers bg-white rounded p-3">
+                <h4 class="text-center text-dark pt-4 pb-3">Get Package Offers</h4>
+              <form>
+                <div class="form-group pb-3">
+            
+                  <input type="text" class="form-control" id="name" placeholder="Name" required>
+                </div>
+                <div class="form-group pb-3">
+                  
+                  <input type="email" class="form-control" id="email" placeholder="Phone No" required>
+                </div>
+                <div class="form-group pb-3">
+                 
+                  <input type="text" class="form-control" id="subject" placeholder="Site Location" required>
+                </div>
+  
+              
+                <button type="submit" class="btn btn-primary btn-block "><a href="contact.html" class="text-white">Send Message</button></a>
+              </form>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script>
+          document.addEventListener('DOMContentLoaded', function() {
+              var hoverImage = document.getElementById('hover1Image');
+              var hoverModal = new bootstrap.Modal(document.getElementById('hoverModal1'));
+      
+              hoverImage.addEventListener('mouseenter', function() {
+                  hoverModal.show();
+              });
+      
+              var closeButtons = document.querySelectorAll('[data-dismiss="modal"]');
+              closeButtons.forEach(function(button) {
+                  button.addEventListener('click', function() {
+                      hoverModal.hide();
+                  });
+              });
+          });
+      </script>
+
+        <!--3bhk-->
+
+          <!--villa-->
+          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+                <img src="assets/img/team/estate-elegant-flat.jpg" class="img-fluid" alt="" id="hover2Image">
+                <div class="member-content">
+                    <h4>Villa/Home</h4>
+                    <span>Residential</span>
+                    <div class="p-2">
+                        <button class="btn btn-info">BUDGET FRIENDLY</button>
+                    </div>
+                    <div class="p-2">
+                        <button class="btn btn-info">VALUE FOR MONEY</button>
+                    </div>
+                    <div class="p-2">
+                        <button class="btn btn-info">END - TO - END</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="hoverModal2" tabindex="-1" aria-labelledby="hoverModal2Label" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="hoverModal2Label">Villa/Home</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                This is a Villa/Home residential apartment.
+              </div>
+              <div class="col-lg">
+                <div class="containers bg-white rounded p-3">
+                  <h4 class="text-center text-dark pt-4 pb-3">Get Package Offers</h4>
+                <form>
+                  <div class="form-group pb-3">
+              
+                    <input type="text" class="form-control" id="name" placeholder="Name" required>
+                  </div>
+                  <div class="form-group pb-3">
+                    
+                    <input type="email" class="form-control" id="email" placeholder="Phone No" required>
+                  </div>
+                  <div class="form-group pb-3">
+                   
+                    <input type="text" class="form-control" id="subject" placeholder="Site Location" required>
+                  </div>
+    
+                
+                  <button type="submit" class="btn btn-primary btn-block "><a href="contact.html" class="text-white">Send Message</button></a>
+                </form>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var hoverImage = document.getElementById('hover2Image');
+                var hoverModal = new bootstrap.Modal(document.getElementById('hoverModal2'));
+        
+                hoverImage.addEventListener('mouseenter', function() {
+                    hoverModal.show();
+                });
+        
+                var closeButtons = document.querySelectorAll('[data-dismiss="modal"]');
+                closeButtons.forEach(function(button) {
+                    button.addEventListener('click', function() {
+                        hoverModal.hide();
+                    });
+                });
+            });
+        </script>
+          <!--villa-->
+
+
+          <!--commercial-->
+          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+                <img src="assets/img/team/modern-apartment.jpg" class="img-fluid" alt="" id="hover3Image">
+                <div class="member-content">
+                  <h4>Commercial</h4>
+                  <span>Commercial</span>
+                  <button class="btn btn-info">  GET FREE ESTIMATE</button>
+                 
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="hoverModal3" tabindex="-1" aria-labelledby="hoverModal3Label" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="hoverModal3Label">Commercial</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                This is a Commercial apartment.
+              </div>
+              <div class="col-lg">
+                <div class="containers bg-white rounded p-3">
+                  <h4 class="text-center text-dark pt-4 pb-3">Get Package Offers</h4>
+                <form>
+                  <div class="form-group pb-3">
+              
+                    <input type="text" class="form-control" id="name" placeholder="Name" required>
+                  </div>
+                  <div class="form-group pb-3">
+                    
+                    <input type="email" class="form-control" id="email" placeholder="Phone No" required>
+                  </div>
+                  <div class="form-group pb-3">
+                   
+                    <input type="text" class="form-control" id="subject" placeholder="Site Location" required>
+                  </div>
+    
+                
+                  <button type="submit" class="btn btn-primary btn-block "><a href="contact.html" class="text-white">Send Message</button></a>
+                </form>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var hoverImage = document.getElementById('hover3Image');
+                var hoverModal = new bootstrap.Modal(document.getElementById('hoverModal3'));
+        
+                hoverImage.addEventListener('mouseenter', function() {
+                    hoverModal.show();
+                });
+        
+                var closeButtons = document.querySelectorAll('[data-dismiss="modal"]');
+                closeButtons.forEach(function(button) {
+                    button.addEventListener('click', function() {
+                        hoverModal.hide();
+                    });
+                });
+            });
+        </script>
+           <!--commercial-->
+          <!-- End Team Member -->
+
+          <!-- End Team Member -->
+        </div>
       </div>
 
     </section><!-- /Team Section -->
 
 
-    
+    <!--how it work-->
+    <section class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="">How it Works</span>
+        <h2>How it Works</h2>
+        
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <img src="assets/img/services/6.png" class="img-fluid" alt="">
+              <a href="#" class="stretched-link">
+                <h3>Initial Meeting</h3>
+              </a>
+              <p>Transform your space with 3D DESIGN, you’ll save time, money, and headaches by ensuring your vision comes to life exactly as you imagined. Elevate your space with confidence today!</p>
+              <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <img src="assets/img/services/5.png" class="img-fluid" alt="">
+              <a href="service.html" class="stretched-link">
+                <h3>Package Briefing</h3>
+              </a>
+              <p>Elevate your home interior to the next level with a modular kitchen!Say goodbye to cluttered spaces and hello to organized, functional, and stylish living. Elevate your home interior game with our customizable modular kitchen designs that not only enhance the aesthetics but also optimize space utilization. Experience the convenience and luxury of a well-planned modular kitchen – the heart of every modern home.</p>
+              <a href="service.html" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <img src="assets/img/services/4.png" class="img-fluid" alt="">
+              <a href="#" class="stretched-link">
+                <h3>On Site Discusstion With Designer</h3>
+              </a>
+              <p>Introducing WARDROBE – your ultimate solution to stylish and organized spaces! Our wardrobe designs are crafted to elevate your storage game while adding a touch of elegance to your room. Say goodbye to clutter and hello to sophistication with our range of customizable options that cater to all your storage needs. Get ready to transform your space effortlessly with WARDROBE – where style meets functionality!</p>
+              <a href="service.html" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <img src="assets/img/services/3.png" class="img-fluid" alt="">
+              <a href="#" class="stretched-link">
+                <h3>Design Execution</h3>
+              </a>
+              <p>Transform your space with elegance and sophistication using our False Ceiling design. Elevate your surroundings with a touch of luxury and modernity that will leave your guests in awe. Create a stunning ambiance in any room, from living spaces to offices, showcasing your unique style and personality. Let our False Ceiling design be the crowning jewel of your interior decor, making every moment spent under it a truly magical experience.</p>
+              <a href="service.html" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <img src="assets/img/services/2.png" class="img-fluid" alt="">
+              <a href="#" class="stretched-link">
+                <h3>Work Begin</h3>
+              </a>
+              <p>Transform your home with the perfect balance of painting and lighting. Discover how the right hues can breathe life into your space, while strategic lighting choices can create ambiance and highlight your favorite features. Elevate your surroundings with our expert tips on color selection and lighting placement, turning your house into a warm and inviting sanctuary you’ll never want to leave. Experience the magic of painting and lighting with us today!</p>
+              <a href="service.html" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <img src="assets/img/services/1.png" class="img-fluid" alt="">
+              <a href="#" class="stretched-link">
+                <h3>Project Handover</h3>
+              </a>
+              <p>Step into a world where your office space reflects your professionalism and style as much as your home does. Our range of office furniture is not just about functionality; it’s about making a statement. Elevate your workspace with our sleek and modern designs that are guaranteed to impress clients and boost productivity. Redefine how you work with our expertly crafted office furniture – because your success deserves a beautiful setting too.</p>
+              <a href="service.html" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+        </div>
+      </div>
+    </section>
+    <!--how it work-->
 
 
   
 
-    <!-- About Section -->
-    <section class="about section professional-bg-container" style="background-image:url(assets/img/luxury-modern-living-room-with-comfortable-sofa-generated-by-ai-scaled.jpg)" style="background-size: cover;" >
-    
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <span class="">About Us</span>
-        <h2 class="text-white about-header">About Us<br></h2>
-        
-      </div><!-- End Section Title -->
-
-      <div class="container content-top">
-
-        <div class="row gy-4">
-
+   <!-- About Section -->
+<section class="about section professional-bg-container" style="background-image:url(assets/img/luxury-modern-living-room-with-comfortable-sofa-generated-by-ai-scaled.jpg); background-size: cover; background-attachment: fixed;">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+      <span class="">About Us</span>
+      <h2 class="text-white about-header">About Us<br></h2>
+  </div><!-- End Section Title -->
+  <div class="container content-top">
+      <div class="row gy-4">
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+              <img src="assets/img/about.jpg" class="img-fluid" alt="">
           </div>
-
           <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
-            <h3  class="text-white">Who We Are</h3>
-            <p class="fst-italic text-white">
-              Home Swarga is always on the forefront of adding technology and taking customers to the next level. Now you can Easily switch from middle class lifestyle to modern luxury world with Home Swarga.
-            </p>
-            <!-- <ul>
-              <li  class="text-white"><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-              <li  class="text-white"><i class="bi bi-check-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-              <li  class="text-white"><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
-            </ul> -->
-            <a href="about.html" class="read-more text-dark"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+              <h3 class="text-white">Who We Are</h3>
+              <p class="fst-italic text-white">Home Swarga is always on the forefront of adding technology and taking customers to the next level. Now you can Easily switch from middle class lifestyle to modern luxury world with Home Swarga.</p>
+              <a href="about.html" class="read-more text-dark"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
           </div>
-
-        </div>
-
       </div>
-
-    </section><!-- /About Section -->
-
+  </div>
+</section>
+<!-- /About Section -->
    
-
+    
    
 
     <!-- Services Section -->
