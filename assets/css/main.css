@@ -1354,6 +1354,10 @@ section,
 .services .service-item:hover .read-more:hover i {
   margin-left: 10px;
 }
+.image{
+  height:40vh;
+  width:25vw;
+}
 
 /*--------------------------------------------------------------
 # Call To Action Section
