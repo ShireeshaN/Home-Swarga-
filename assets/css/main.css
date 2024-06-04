@@ -2102,3 +2102,11 @@ textarea {
   background-size: cover;
   
 }
+
+.banners{
+  background-image: url("assets/img/whataboutkitchen/img1.jpg");
+  height:200vh;
+  object-fit: cover;
+  background-size:auto;
+  text-align: start;
+}
