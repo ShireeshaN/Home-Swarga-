@@ -2198,3 +2198,9 @@ textarea {
       text-align: justify;
     }
     
+
+    /*footer img */
+    .footerimgs{
+      height:100px;
+      width:100px;
+    }
