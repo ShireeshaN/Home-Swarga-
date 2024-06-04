@@ -2095,3 +2095,10 @@ textarea {
   font-weight: normal;
 }
 
+
+
+.kitchen-container{
+  background-image: url("assets/img/whataboutkitchen/img1.jpg");
+  background-size: cover;
+  
+}
