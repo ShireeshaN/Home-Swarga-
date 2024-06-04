@@ -2110,3 +2110,91 @@ textarea {
   background-size:auto;
   text-align: start;
 }
+
+/* youtube testimonials */
+
+.video-testimonials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 20px;
+  overflow: hidden;
+  }
+  
+  .video-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px 0;
+  margin: 0 50px; /* Space for the scroll buttons */
+  }
+  
+  .video-container {
+  flex: 0 0 auto;
+  width: 300px; /* Adjust width as needed */
+  margin-right: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s;
+  }
+  
+  .video-container:last-child {
+  margin-right: 0;
+  }
+  
+  .video-container:hover {
+  transform: scale(1.05);
+  }
+  
+  iframe {
+  width: 100%;
+  height: 200px; /* Adjust height as needed */
+  border: none;
+  }
+  
+  .scroll-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+  }
+  
+  .scroll-button.left {
+  left: 0;
+  }
+  
+  .scroll-button.right {
+  right: 0;
+  }
+
+
+  /* google revies*/
+  .review-box {
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    padding: 20px;
+    margin-bottom: 20px;
+    }
+    
+    .review-box h4 {
+    margin-top: 0;
+    }
+    
+    .stars {
+    color: #ffc107; /* yellow color for stars */
+    }
+    
+    .star {
+    font-size: 24px;
+    }
+    .revie{
+      text-align: justify;
+    }
+    

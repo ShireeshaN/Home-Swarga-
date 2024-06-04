@@ -219,3 +219,36 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+/* youtube testimoials*/
+
+function scrollLeft() {
+  const container = document.querySelector('.video-scroll-container');
+  container.scrollBy({
+      left: -300, // Adjust this value to control the scroll distance
+      behavior: 'smooth'
+  });
+}
+
+function scrollRight() {
+  const container = document.querySelector('.video-scroll-container');
+  container.scrollBy({
+      left: 300, // Adjust this value to control the scroll distance
+      behavior: 'smooth'
+  });
+}
+
+// Automatic scrolling
+let scrollDirection = 1; // 1 for right, -1 for left
+const autoScrollInterval = setInterval(() => {
+  const container = document.querySelector('.video-scroll-container');
+  if (container.scrollLeft + container.clientWidth >= container.scrollWidth) {
+      scrollDirection = -1;
+  } else if (container.scrollLeft === 0) {
+      scrollDirection = 1;
+  }
+  container.scrollBy({
+      left: 300 * scrollDirection, // Adjust this value to control the scroll distance
+      behavior: 'smooth'
+  });
+}, 3000); // Adjust the interval time (in milliseconds) as needed
