@@ -1833,7 +1833,7 @@ section,
 
 .contact .php-email-form button[type=submit] {
   color: var(--contrast-color);
-  background: #19184D;
+  background: #2388FA;
   border: 0;
   padding: 8px 30px 10px 30px;
   transition: 0.4s;
@@ -2198,6 +2198,12 @@ textarea {
       text-align: justify;
     }
     
+
+    /*footer img */
+    .footerimgs{
+      height:100px;
+      width:100px;
+    }
     .commercial-office{
       height:40vh;
       width:40vw;
