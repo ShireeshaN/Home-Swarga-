@@ -2198,3 +2198,10 @@ textarea {
       text-align: justify;
     }
     
+    .commercial-office{
+      height:40vh;
+      width:40vw;
+      border-radius: 20px;
+      
+    }
+
