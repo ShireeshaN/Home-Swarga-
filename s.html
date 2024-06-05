@@ -33,19 +33,10 @@
     background-color: #4b6cb7;
     border-color: #4b6cb7;
     color: white;
-    animation: heartbeat 1.5s infinite;
   }
 
-  @keyframes heartbeat {
-    0% {
-      transform: scale(0.9);
-    }
-    50% {
-      transform: scale(1);
-    }
-    100% {
-      transform: scale(0.9);
-    }
+  .btn-primary:active {
+    background-color: #4b6cb7; /* Keep the color same on click */
   }
 </style>
 </head>
@@ -53,7 +44,7 @@
 
 <div class="left-container">
   <h2 class="mb-4">Get Package Offers</h2>
-  <form>
+  <form id="messageForm">
     <div class="form-group">
       <label for="name">Name</label>
       <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
@@ -70,7 +61,7 @@
       <label for="location">Location</label>
       <input type="text" class="form-control" id="location" placeholder="Enter your location" required>
     </div>
-    <button id="messageForm" action="send_message.php" method="post" type="submit" class="btn btn-primary btn-block">Submit</button>
+    <button type="submit" class="btn btn-primary btn-block">Submit</button>
   </form>
 </div>
 
@@ -78,6 +69,29 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+<script>
+  $(document).ready(function(){
+    $('#messageForm').submit(function(e){
+      e.preventDefault(); // Prevent form submission
+      var name = $('#name').val();
+      var phone = $('#phone').val();
+      var site = $('#site').val();
+      var location = $('#location').val();
+      
+      // Send the data to your backend service using AJAX
+      $.ajax({
+        url: 'backend.php',
+        method: 'POST',
+        data: {name: name, phone: phone, site: site, location: location},
+        success: function(response){
+          alert(response); // Display success message
+        },
+        error: function(xhr, status, error){
+          console.error(xhr.responseText); // Log any errors
+        }
+      });
+    });
+  });
+</script>
 </body>
 </html>
