@@ -865,7 +865,7 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 60px 0;
+
   scroll-margin-top: 100px;
   overflow: clip;
 }
@@ -2209,5 +2209,9 @@ textarea {
       width:40vw;
       border-radius: 20px;
       
+    }
+
+    .kitchen-img{
+      width:35vw;
     }
 
