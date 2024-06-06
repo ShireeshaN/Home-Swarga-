@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Form Example</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+            padding-top: 60px;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 50%; /* Decreased width */
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- Member 1 -->
+            <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+                <div class="member">
+                    <img src="assets/img/team/estate-modern-apartment.jpg" class="img-fluid" alt="">
+                    <div class="member-content">
+                        <h4>2 BHK</h4>
+                        <span>Residential</span>
+                        <div class="p-2">
+                            <button class="btn btn-info open-modal" data-modal="modal1">BUDGET FRIENDLY</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Member 2 -->
+            <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+                <div class="member">
+                    <img src="assets/img/team/estate-modern-apartment.jpg" class="img-fluid" alt="">
+                    <div class="member-content">
+                        <h4>3 BHK</h4>
+                        <span>Residential</span>
+                        <div class="p-2">
+                            <button class="btn btn-info open-modal" data-modal="modal2">VALUE FOR MONEY</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Member 3 -->
+            <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+                <div class="member">
+                    <img src="assets/img/team/estate-modern-apartment.jpg" class="img-fluid" alt="">
+                    <div class="member-content">
+                        <h4>4 BHK</h4>
+                        <span>Residential</span>
+                        <div class="p-2">
+                            <button class="btn btn-info open-modal" data-modal="modal3">END - TO - END</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Member 4 -->
+            <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+                <div class="member">
+                    <img src="assets/img/team/estate-modern-apartment.jpg" class="img-fluid" alt="">
+                    <div class="member-content">
+                        <h4>PENTHOUSE</h4>
+                        <span>Residential</span>
+                        <div class="p-2">
+                            <button class="btn btn-info open-modal" data-modal="modal4">LUXURY</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal Templates -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal1">&times;</span>
+            <h2>Get Package Offers</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name1">Name:</label>
+                    <input type="text" class="form-control" id="name1" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone1">Phone Number:</label>
+                    <input type="tel" class="form-control" id="phone1" required>
+                </div>
+                <div class="form-group">
+                    <label for="location1">Site Location:</label>
+                    <input type="text" class="form-control" id="location1" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal2">&times;</span>
+            <h2>Get Package Offers</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name2">Name:</label>
+                    <input type="text" class="form-control" id="name2" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone2">Phone Number:</label>
+                    <input type="tel" class="form-control" id="phone2" required>
+                </div>
+                <div class="form-group">
+                    <label for="location2">Site Location:</label>
+                    <input type="text" class="form-control" id="location2" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal3">&times;</span>
+            <h2>Get Package Offers</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name3">Name:</label>
+                    <input type="text" class="form-control" id="name3" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone3">Phone Number:</label>
+                    <input type="tel" class="form-control" id="phone3" required>
+                </div>
+                <div class="form-group">
+                    <label for="location3">Site Location:</label>
+                    <input type="text" class="form-control" id="location3" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" data-modal="modal4">&times;</span>
+            <h2>Get Package Offers</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name4">Name:</label>
+                    <input type="text" class="form-control" id="name4" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone4">Phone Number:</label>
+                    <input type="tel" class="form-control" id="phone4" required>
+                </div>
+                <div class="form-group">
+                    <label for="location4">Site Location:</label>
+                    <input type="text" class="form-control" id="location4" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Get all buttons that open modals
+        var btns = document.getElementsByClassName("open-modal");
+
+        // Get all <span> elements that close the modals
+        var spans = document.getElementsByClassName("close");
+
+        // Loop through each button to add the click event listener
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].onclick = function() {
+                var modalId = this.getAttribute("data-modal");
+                document.getElementById(modalId).style.display = "block";
+            }
+        }
+
+        // Loop through each <span> element to add the click event listener
+        for (var i = 0; i < spans.length; i++) {
+            spans[i].onclick = function() {
+                var modalId = this.getAttribute("data-modal");
+                document.getElementById(modalId).style.display = "none";
+            }
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
