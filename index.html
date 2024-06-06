@@ -211,338 +211,229 @@
       <div class="p-3">
 
         <div class="row">
-<!--2bhk-->
-          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-                <img src="assets/img/team/estate-modern-apartment.jpg" class="img-fluid" alt="" id="hoverImage">
-                <div class="member-content">
-                    <h4>2 BHK</h4>
-                    <span>Residential</span>
-                    <div class="p-2">
-                        <button class="btn btn-info">BUDGET FRIENDLY</button>
-                    </div>
-                    <div class="p-2">
-                        <button class="btn btn-info">VALUE FOR MONEY</button>
-                    </div>
-                    <div class="p-2">
-                        <button class="btn btn-info">END - TO - END</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Modal -->
-        <div class="modal fade" id="hoverModal" tabindex="-1" aria-labelledby="hoverModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="hoverModalLabel">2 BHK</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                This is a 2 BHK residential apartment.
-              </div>
-              <div class="col-lg">
-                <div class="containers bg-white rounded p-3">
-                  <h4 class="text-center text-dark pt-4 pb-3">Get Package Offers</h4>
-                <form>
-                  <div class="form-group pb-3">
-              
-                    <input type="text" class="form-control" id="name" placeholder="Name" required>
-                  </div>
-                  <div class="form-group pb-3">
-                    
-                    <input type="email" class="form-control" id="email" placeholder="Phone No" required>
-                  </div>
-                  <div class="form-group pb-3">
-                   
-                    <input type="text" class="form-control" id="subject" placeholder="Site Location" required>
-                  </div>
+          <style>
+            .modal {
+                display: none;
+                position: fixed;
+                z-index: 1;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgb(0,0,0);
+                background-color: rgba(0,0,0,0.4);
+                padding-top: 60px;
+            }
     
-                 <!-- <div class="form-group pb-3">
-                    <textarea class="form-control" id="message" rows="5" placeholder="Message" required></textarea>
-                  </div>-->
+            .modal-content {
+                background-color: #fefefe;
+                margin: 5% auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 50%; /* Decreased width */
+            }
     
-                  <button type="submit" class="btn btn-primary btn-block "><a href="contact.html" class="text-white">Send Message</button></a>
-                </form>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                var hoverImage = document.getElementById('hoverImage');
-                var hoverModal = new bootstrap.Modal(document.getElementById('hoverModal'));
-        
-                hoverImage.addEventListener('mouseenter', function() {
-                    hoverModal.show();
-                });
-        
-                var closeButtons = document.querySelectorAll('[data-dismiss="modal"]');
-                closeButtons.forEach(function(button) {
-                    button.addEventListener('click', function() {
-                        hoverModal.hide();
-                    });
-                });
-            });
-        </script><!-- 2bhk -->
-          
-
-        <!--3bhk-->
-        <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            .close {
+                color: #aaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+    
+            .close:hover,
+            .close:focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+            }
+</style>
+<div class="p-5">
+  <div class="row">
+      <!-- Member 1 -->
+      <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
           <div class="member">
-              <img src="assets/img/team/estate-family-home.jpg" class="img-fluid" alt="" id="hover1Image">
+              <img src="assets/img/team/estate-modern-apartment.jpg" class="img-fluid" alt="">
+              <div class="member-content">
+                  <h4>2 BHK</h4>
+                  <span>Residential</span>
+                  <div class="p-2">
+                      <button class="btn btn-info open-modal" data-modal="modal1">BUDGET FRIENDLY</button>
+                      <p>VALUE FOR MONEY</p>
+                      <p>END - TO - END</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Member 2 -->
+      <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+          <div class="member">
+              <img src="assets/img/team/estate-modern-apartment.jpg" class="img-fluid" alt="">
               <div class="member-content">
                   <h4>3 BHK</h4>
                   <span>Residential</span>
                   <div class="p-2">
-                      <button class="btn btn-info">BUDGET FRIENDLY</button>
-                  </div>
-                  <div class="p-2">
-                      <button class="btn btn-info">VALUE FOR MONEY</button>
-                  </div>
-                  <div class="p-2">
-                      <button class="btn btn-info">END - TO - END</button>
+                      <button class="btn btn-info open-modal" data-modal="modal2">BUDGET FRIENDLY</button>
+                      <p>VALUE FOR MONEY</p>
+                      <p>END - TO - END</p>
                   </div>
               </div>
           </div>
       </div>
-      
-      <!-- Modal -->
-      <div class="modal fade" id="hoverModal1" tabindex="-1" aria-labelledby="hoverModal1Label" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="hoverModal1Label">3 BHK</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              This is a 3 BHK residential apartment.
-            </div>
-            <div class="col-lg">
-              <div class="containers bg-white rounded p-3">
-                <h4 class="text-center text-dark pt-4 pb-3">Get Package Offers</h4>
-              <form>
-                <div class="form-group pb-3">
-            
-                  <input type="text" class="form-control" id="name" placeholder="Name" required>
-                </div>
-                <div class="form-group pb-3">
-                  
-                  <input type="email" class="form-control" id="email" placeholder="Phone No" required>
-                </div>
-                <div class="form-group pb-3">
-                 
-                  <input type="text" class="form-control" id="subject" placeholder="Site Location" required>
-                </div>
-  
-              
-                <button type="submit" class="btn btn-primary btn-block "><a href="contact.html" class="text-white">Send Message</button></a>
-              </form>
+      <!-- Member 3 -->
+      <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+          <div class="member">
+              <img src="assets/img/team/estate-modern-apartment.jpg" class="img-fluid" alt="">
+              <div class="member-content">
+                  <h4>VILLA/HOME</h4>
+                  <span>Residential</span>
+                  <div class="p-2">
+                      <button class="btn btn-info open-modal" data-modal="modal3">BUDGET FRIENDLY</button>
+                      <p>VALUE FOR MONEY</p>
+                      <p>END - TO - END</p>
+                  </div>
               </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
           </div>
-        </div>
       </div>
-      
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-      <script>
-          document.addEventListener('DOMContentLoaded', function() {
-              var hoverImage = document.getElementById('hover1Image');
-              var hoverModal = new bootstrap.Modal(document.getElementById('hoverModal1'));
-      
-              hoverImage.addEventListener('mouseenter', function() {
-                  hoverModal.show();
-              });
-      
-              var closeButtons = document.querySelectorAll('[data-dismiss="modal"]');
-              closeButtons.forEach(function(button) {
-                  button.addEventListener('click', function() {
-                      hoverModal.hide();
-                  });
-              });
-          });
-      </script>
-
-        <!--3bhk-->
-
-          <!--villa-->
-          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-                <img src="assets/img/team/estate-elegant-flat.jpg" class="img-fluid" alt="" id="hover2Image">
-                <div class="member-content">
-                    <h4>Villa/Home</h4>
-                    <span>Residential</span>
-                    <div class="p-2">
-                        <button class="btn btn-info">BUDGET FRIENDLY</button>
-                    </div>
-                    <div class="p-2">
-                        <button class="btn btn-info">VALUE FOR MONEY</button>
-                    </div>
-                    <div class="p-2">
-                        <button class="btn btn-info">END - TO - END</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Modal -->
-        <div class="modal fade" id="hoverModal2" tabindex="-1" aria-labelledby="hoverModal2Label" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="hoverModal2Label">Villa/Home</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                This is a Villa/Home residential apartment.
-              </div>
-              <div class="col-lg">
-                <div class="containers bg-white rounded p-3">
-                  <h4 class="text-center text-dark pt-4 pb-3">Get Package Offers</h4>
-                <form>
-                  <div class="form-group pb-3">
-              
-                    <input type="text" class="form-control" id="name" placeholder="Name" required>
+      <!-- Member 4 -->
+      <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+          <div class="member">
+              <img src="assets/img/team/estate-modern-apartment.jpg" class="img-fluid" alt="">
+              <div class="member-content">
+                  <h4>COMMERCIAL</h4>
+                  <span>commercial</span>
+                  <div class="p-2">
+                      <button class="btn btn-info open-modal" data-modal="modal4">BUDGET FRIENDLY</button>
+                      <p>VALUE FOR MONEY</p>
+                      <p>END - TO - END</p>
                   </div>
-                  <div class="form-group pb-3">
-                    
-                    <input type="email" class="form-control" id="email" placeholder="Phone No" required>
-                  </div>
-                  <div class="form-group pb-3">
-                   
-                    <input type="text" class="form-control" id="subject" placeholder="Site Location" required>
-                  </div>
-    
-                
-                  <button type="submit" class="btn btn-primary btn-block "><a href="contact.html" class="text-white">Send Message</button></a>
-                </form>
-                </div>
               </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              </div>
-            </div>
           </div>
-        </div>
-        
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                var hoverImage = document.getElementById('hover2Image');
-                var hoverModal = new bootstrap.Modal(document.getElementById('hoverModal2'));
-        
-                hoverImage.addEventListener('mouseenter', function() {
-                    hoverModal.show();
-                });
-        
-                var closeButtons = document.querySelectorAll('[data-dismiss="modal"]');
-                closeButtons.forEach(function(button) {
-                    button.addEventListener('click', function() {
-                        hoverModal.hide();
-                    });
-                });
-            });
-        </script>
-          <!--villa-->
+      </div>
+  </div>
+</div>
 
-
-          <!--commercial-->
-          <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-                <img src="assets/img/team/modern-apartment.jpg" class="img-fluid" alt="" id="hover3Image">
-                <div class="member-content">
-                  <h4>Commercial</h4>
-                  <span>Commercial</span>
-                  <button class="btn btn-info">  GET FREE ESTIMATE</button>
-                 
-                </div>
-            </div>
-        </div>
-        
-        <!-- Modal -->
-        <div class="modal fade" id="hoverModal3" tabindex="-1" aria-labelledby="hoverModal3Label" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="hoverModal3Label">Commercial</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                This is a Commercial apartment.
-              </div>
-              <div class="col-lg">
-                <div class="containers bg-white rounded p-3">
-                  <h4 class="text-center text-dark pt-4 pb-3">Get Package Offers</h4>
-                <form>
-                  <div class="form-group pb-3">
-              
-                    <input type="text" class="form-control" id="name" placeholder="Name" required>
-                  </div>
-                  <div class="form-group pb-3">
-                    
-                    <input type="email" class="form-control" id="email" placeholder="Phone No" required>
-                  </div>
-                  <div class="form-group pb-3">
-                   
-                    <input type="text" class="form-control" id="subject" placeholder="Site Location" required>
-                  </div>
-    
-                
-                  <button type="submit" class="btn btn-primary btn-block "><a href="contact.html" class="text-white">Send Message</button></a>
-                </form>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              </div>
-            </div>
+<!-- The Modal Templates -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+      <span class="close" data-modal="modal1">&times;</span>
+      <h2>Get Package Offers</h2>
+      <form>
+          <div class="form-group">
+              <label for="name1">Name:</label>
+              <input type="text" class="form-control" id="name1" required>
           </div>
-        </div>
-        
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                var hoverImage = document.getElementById('hover3Image');
-                var hoverModal = new bootstrap.Modal(document.getElementById('hoverModal3'));
-        
-                hoverImage.addEventListener('mouseenter', function() {
-                    hoverModal.show();
-                });
-        
-                var closeButtons = document.querySelectorAll('[data-dismiss="modal"]');
-                closeButtons.forEach(function(button) {
-                    button.addEventListener('click', function() {
-                        hoverModal.hide();
-                    });
-                });
-            });
-        </script>
-           <!--commercial-->
-          <!-- End Team Member -->
+          <div class="form-group">
+              <label for="phone1">Phone Number:</label>
+              <input type="tel" class="form-control" id="phone1" required>
+          </div>
+          <div class="form-group">
+              <label for="location1">Site Location:</label>
+              <input type="text" class="form-control" id="location1" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+  </div>
+</div>
 
-          <!-- End Team Member -->
+<div id="modal2" class="modal">
+  <div class="modal-content">
+      <span class="close" data-modal="modal2">&times;</span>
+      <h2>Get Package Offers</h2>
+      <form>
+          <div class="form-group">
+              <label for="name2">Name:</label>
+              <input type="text" class="form-control" id="name2" required>
+          </div>
+          <div class="form-group">
+              <label for="phone2">Phone Number:</label>
+              <input type="tel" class="form-control" id="phone2" required>
+          </div>
+          <div class="form-group">
+              <label for="location2">Site Location:</label>
+              <input type="text" class="form-control" id="location2" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+  </div>
+</div>
+
+<div id="modal3" class="modal">
+  <div class="modal-content">
+      <span class="close" data-modal="modal3">&times;</span>
+      <h2>Get Package Offers</h2>
+      <form>
+          <div class="form-group">
+              <label for="name3">Name:</label>
+              <input type="text" class="form-control" id="name3" required>
+          </div>
+          <div class="form-group">
+              <label for="phone3">Phone Number:</label>
+              <input type="tel" class="form-control" id="phone3" required>
+          </div>
+          <div class="form-group">
+              <label for="location3">Site Location:</label>
+              <input type="text" class="form-control" id="location3" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+  </div>
+</div>
+
+<div id="modal4" class="modal">
+  <div class="modal-content">
+      <span class="close" data-modal="modal4">&times;</span>
+      <h2>Get Package Offers</h2>
+      <form>
+          <div class="form-group">
+              <label for="name4">Name:</label>
+              <input type="text" class="form-control" id="name4" required>
+          </div>
+          <div class="form-group">
+              <label for="phone4">Phone Number:</label>
+              <input type="tel" class="form-control" id="phone4" required>
+          </div>
+          <div class="form-group">
+              <label for="location4">Site Location:</label>
+              <input type="text" class="form-control" id="location4" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+  </div>
+</div>
+
+<script>
+  // Get all buttons that open modals
+  var btns = document.getElementsByClassName("open-modal");
+
+  // Get all <span> elements that close the modals
+  var spans = document.getElementsByClassName("close");
+
+  // Loop through each button to add the click event listener
+  for (var i = 0; i < btns.length; i++) {
+      btns[i].onclick = function() {
+          var modalId = this.getAttribute("data-modal");
+          document.getElementById(modalId).style.display = "block";
+      }
+  }
+
+  // Loop through each <span> element to add the click event listener
+  for (var i = 0; i < spans.length; i++) {
+      spans[i].onclick = function() {
+          var modalId = this.getAttribute("data-modal");
+          document.getElementById(modalId).style.display = "none";
+      }
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target.classList.contains('modal')) {
+          event.target.style.display = "none";
+      }
+  }
+</script>
+
+
         </div>
       </div>
 
