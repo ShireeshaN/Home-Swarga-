@@ -350,7 +350,7 @@ h6 {
 
   .navmenu a,
   .navmenu a:focus {
-    color: var(--nav-dropdown-color);
+    color: var(--nav-dropdown-color) !important;
     padding: 10px 20px;
     font-family: var(--nav-font);
     font-size: 17px;
@@ -374,7 +374,7 @@ h6 {
     justify-content: center;
     border-radius: 50%;
     transition: 0.3s;
-    background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+    background-color: color-mix(in srgb, var(--accent-color), transparent 90%) !important;
   }
 
   .navmenu a i:hover,
@@ -386,7 +386,7 @@ h6 {
   .navmenu a:hover,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-dropdown-hover-color);
+    color: var(--accent-color) !important;
   }
 
   .navmenu .active i,
@@ -440,6 +440,8 @@ h6 {
 
   .mobile-nav-active .navmenu>ul {
     display: block;
+    height: 70vh;
+    overflow-y: scroll;
   }
   .mobile-nav-active .navmenu>ul li{
     display: block;
@@ -1846,7 +1848,7 @@ section,
   font-size:28px;
   font-weight: bold;
   color: rgb(25, 24, 77);
-  font-family: "Yanone kaffeesatz",sans-serif";
+  font-family: "Yanone kaffeesatz,sans-serif";
   padding-bottom: 20px;
 }
 .contact .php-email-form button[type=submit]{
@@ -2316,6 +2318,10 @@ textarea {
 
     .kitchen-img{
       width:35vw;
+    }
+    .contact-img{
+      height:50px;
+      width:50px;
     }
 
 

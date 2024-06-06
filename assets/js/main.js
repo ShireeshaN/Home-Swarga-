@@ -238,6 +238,17 @@ function scrollRight() {
   });
 }
 
+$(".video-scroll-container").owlCarousel({
+  autoplay: true,
+  smartSpeed: 1500,
+  loop: true,
+  nav: false,
+  dots: true,
+  items: 1,
+  dotsData: true,
+});
+
+
 // Automatic scrolling
 let scrollDirection = 1; // 1 for right, -1 for left
 const autoScrollInterval = setInterval(() => {
