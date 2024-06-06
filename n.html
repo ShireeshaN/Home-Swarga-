@@ -1,224 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Popup Form Example</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgb(0,0,0);
-            background-color: rgba(0,0,0,0.4);
-            padding-top: 60px;
-        }
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Services - Home Swarga</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-        .modal-content {
-            background-color: #fefefe;
-            margin: 5% auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 50%; /* Decreased width */
-        }
+  <!-- Favicons -->
+  <link href="assets/img/newlogo.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-        .close:hover,
-        .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
-    </style>
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Day
+  * Template URL: https://bootstrapmade.com/day-multipurpose-html-template-for-free/
+  * Updated: May 18 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
-<body>
+
+<body class="starter-page-page">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Portfolio Section -->
+<section  class="portfolio section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <span class="">Portfolio</span>
+      <h2>Portfolio</h2>
+      <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+    </div><!-- End Section Title -->
+
     <div class="container">
-        <div class="row">
-            <!-- Member 1 -->
-            <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-                <div class="member">
-                    <img src="assets/img/team/estate-modern-apartment.jpg" class="img-fluid" alt="">
-                    <div class="member-content">
-                        <h4>2 BHK</h4>
-                        <span>Residential</span>
-                        <div class="p-2">
-                            <button class="btn btn-info open-modal" data-modal="modal1">BUDGET FRIENDLY</button>
-                        </div>
-                    </div>
-                </div>
+
+      <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+        <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter=".filter-app">App</li>
+          <li data-filter=".filter-product">Card</li>
+          <li data-filter=".filter-branding">Web</li>
+        </ul><!-- End Portfolio Filters -->
+
+        <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+            <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 1</h4>
+              <p>Lorem ipsum, dolor sit</p>
+              <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
             </div>
-            <!-- Member 2 -->
-            <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
-                <div class="member">
-                    <img src="assets/img/team/estate-modern-apartment.jpg" class="img-fluid" alt="">
-                    <div class="member-content">
-                        <h4>3 BHK</h4>
-                        <span>Residential</span>
-                        <div class="p-2">
-                            <button class="btn btn-info open-modal" data-modal="modal2">VALUE FOR MONEY</button>
-                        </div>
-                    </div>
-                </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+            <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Product 1</h4>
+              <p>Lorem ipsum, dolor sit</p>
+              <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
             </div>
-            <!-- Member 3 -->
-            <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
-                <div class="member">
-                    <img src="assets/img/team/estate-modern-apartment.jpg" class="img-fluid" alt="">
-                    <div class="member-content">
-                        <h4>4 BHK</h4>
-                        <span>Residential</span>
-                        <div class="p-2">
-                            <button class="btn btn-info open-modal" data-modal="modal3">END - TO - END</button>
-                        </div>
-                    </div>
-                </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+            <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Branding 1</h4>
+              <p>Lorem ipsum, dolor sit</p>
+              <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
             </div>
-            <!-- Member 4 -->
-            <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
-                <div class="member">
-                    <img src="assets/img/team/estate-modern-apartment.jpg" class="img-fluid" alt="">
-                    <div class="member-content">
-                        <h4>PENTHOUSE</h4>
-                        <span>Residential</span>
-                        <div class="p-2">
-                            <button class="btn btn-info open-modal" data-modal="modal4">LUXURY</button>
-                        </div>
-                    </div>
-                </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+            <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 2</h4>
+              <p>Lorem ipsum, dolor sit</p>
+              <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
             </div>
-        </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+            <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Product 2</h4>
+              <p>Lorem ipsum, dolor sit</p>
+              <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+            <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Branding 2</h4>
+              <p>Lorem ipsum, dolor sit</p>
+              <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+            <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 3</h4>
+              <p>Lorem ipsum, dolor sit</p>
+              <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+            <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Product 3</h4>
+              <p>Lorem ipsum, dolor sit</p>
+              <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+            <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Branding 3</h4>
+              <p>Lorem ipsum, dolor sit</p>
+              <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+        </div><!-- End Portfolio Container -->
+
+      </div>
+
     </div>
 
-    <!-- The Modal Templates -->
-    <div id="modal1" class="modal">
-        <div class="modal-content">
-            <span class="close" data-modal="modal1">&times;</span>
-            <h2>Get Package Offers</h2>
-            <form>
-                <div class="form-group">
-                    <label for="name1">Name:</label>
-                    <input type="text" class="form-control" id="name1" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone1">Phone Number:</label>
-                    <input type="tel" class="form-control" id="phone1" required>
-                </div>
-                <div class="form-group">
-                    <label for="location1">Site Location:</label>
-                    <input type="text" class="form-control" id="location1" required>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </div>
-    </div>
+  </section><!-- /Portfolio Section -->
 
-    <div id="modal2" class="modal">
-        <div class="modal-content">
-            <span class="close" data-modal="modal2">&times;</span>
-            <h2>Get Package Offers</h2>
-            <form>
-                <div class="form-group">
-                    <label for="name2">Name:</label>
-                    <input type="text" class="form-control" id="name2" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone2">Phone Number:</label>
-                    <input type="tel" class="form-control" id="phone2" required>
-                </div>
-                <div class="form-group">
-                    <label for="location2">Site Location:</label>
-                    <input type="text" class="form-control" id="location2" required>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </div>
-    </div>
 
-    <div id="modal3" class="modal">
-        <div class="modal-content">
-            <span class="close" data-modal="modal3">&times;</span>
-            <h2>Get Package Offers</h2>
-            <form>
-                <div class="form-group">
-                    <label for="name3">Name:</label>
-                    <input type="text" class="form-control" id="name3" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone3">Phone Number:</label>
-                    <input type="tel" class="form-control" id="phone3" required>
-                </div>
-                <div class="form-group">
-                    <label for="location3">Site Location:</label>
-                    <input type="text" class="form-control" id="location3" required>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </div>
-    </div>
-
-    <div id="modal4" class="modal">
-        <div class="modal-content">
-            <span class="close" data-modal="modal4">&times;</span>
-            <h2>Get Package Offers</h2>
-            <form>
-                <div class="form-group">
-                    <label for="name4">Name:</label>
-                    <input type="text" class="form-control" id="name4" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone4">Phone Number:</label>
-                    <input type="tel" class="form-control" id="phone4" required>
-                </div>
-                <div class="form-group">
-                    <label for="location4">Site Location:</label>
-                    <input type="text" class="form-control" id="location4" required>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </div>
-    </div>
-
-    <script>
-        // Get all buttons that open modals
-        var btns = document.getElementsByClassName("open-modal");
-
-        // Get all <span> elements that close the modals
-        var spans = document.getElementsByClassName("close");
-
-        // Loop through each button to add the click event listener
-        for (var i = 0; i < btns.length; i++) {
-            btns[i].onclick = function() {
-                var modalId = this.getAttribute("data-modal");
-                document.getElementById(modalId).style.display = "block";
-            }
-        }
-
-        // Loop through each <span> element to add the click event listener
-        for (var i = 0; i < spans.length; i++) {
-            spans[i].onclick = function() {
-                var modalId = this.getAttribute("data-modal");
-                document.getElementById(modalId).style.display = "none";
-            }
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target.classList.contains('modal')) {
-                event.target.style.display = "none";
-            }
-        }
-    </script>
-</body>
-</html>
+   <!-- Vendor JS Files -->
+   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+   <script src="assets/vendor/php-email-form/validate.js"></script>
+   <script src="assets/vendor/aos/aos.js"></script>
+   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+ 
+   <!-- Main JS File -->
+   <script src="assets/js/main.js"></script>
+ 
+ </body>
+ 
+ </html>
