@@ -2732,3 +2732,14 @@ textarea {
 }
 
 /* end to end */
+
+/* logo bg*/
+.bgss {
+  background-color: white;
+  border-radius: 70px;
+  height: 130px;
+  width: 130px;
+  padding-top: 20px;
+  text-align: center;
+
+}
