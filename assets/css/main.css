@@ -284,6 +284,7 @@ h6 {
 
   .navmenu .dropdown ul a i {
     font-size: 12px;
+  
   }
 
   .navmenu .dropdown ul a:hover,
@@ -380,7 +381,7 @@ h6 {
     justify-content: center;
     border-radius: 50%;
     transition: 0.3s;
-    background-color: color-mix(in srgb, var(--accent-color), transparent 90%) !important;
+    background-color: color-mix(in srgb, var(--accent-color), transparent 10%) !important;
   }
 
   .navmenu a i:hover,
@@ -419,6 +420,7 @@ h6 {
   .navmenu .dropdown>.dropdown-active {
     display: block;
     background-color: rgba(33, 37, 41, 0.03);
+    position: unset !important;
   }
 
   .mobile-nav-active {
