@@ -37,6 +37,10 @@
 .policycolor{
   color:#19184D;
 }
+
+.paras{
+  text-align: justify;
+}
 /* Nav Menu Colors */
 :root {
   /* Nav Color - This is the default color of the main navmenu links. */
