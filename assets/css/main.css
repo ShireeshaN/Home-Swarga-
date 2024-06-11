@@ -381,6 +381,7 @@ h6 {
     justify-content: center;
     border-radius: 50%;
     transition: 0.3s;
+color: var(--contrast-color);
     background-color: color-mix(in srgb, var(--accent-color), transparent 10%) !important;
   }
 
