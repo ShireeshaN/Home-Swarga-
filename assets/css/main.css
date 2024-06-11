@@ -29,19 +29,25 @@
   --heading-color: #191919;
 
   /* Accent Color - This is the main accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out. */
-  --accent-color: #cc1616;
+  --accent-color: #19184D;
 
   /* Contrast Color - This is a color used for text when the background color is one of the heading, accent, or default colors. Its purpose is to ensure proper contrast and readability when placed over these more dominant colors. */
   --contrast-color: #ffffff;
 }
+.policycolor{
+  color:#19184D;
+}
 
+.paras{
+  text-align: justify;
+}
 /* Nav Menu Colors */
 :root {
   /* Nav Color - This is the default color of the main navmenu links. */
   --nav-color: #ffffff;
 
   /* Nav Hover Color - This color is applied to main navmenu links when they are hovered over. */
-  --nav-hover-color: #cc1616;
+  --nav-hover-color: #19184D;
 
   /* Nav Dropdown Background Color - This color is used as the background for dropdown boxes that appear when hovering over primary navigation items. */
   --nav-dropdown-background-color: #ffffff;
@@ -50,7 +56,7 @@
   --nav-dropdown-color: #212529;
 
   /* Nav Dropdown Hover Color - Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
-  --nav-dropdown-hover-color: #cc1616;
+  --nav-dropdown-hover-color: #19184D;
 }
 
 /* Smooth scroll */
