@@ -8,6 +8,14 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOW.js Example</title>
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- WOW.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
   <!-- Favicons -->
   <link href="assets/img/newlogo.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -910,7 +918,7 @@
     <!--Google reviews-->
 
 
-    <div class="container pb-5">
+    <div class="container pb-5 wow animate_animated  animate__heartBeat">
       <div class="row">
         <div class="col-md-3">
           <div class="review-box bg-info">
@@ -1274,9 +1282,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
+  
+  <script src="https://kit.fontawesome.com/35f3e4fe0e.js" crossorigin="anonymous"></script>
+  <script src="assets/lib/wow/wow.min.js"></script>
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    new WOW().init();
+</script>
 
 </body>
 
