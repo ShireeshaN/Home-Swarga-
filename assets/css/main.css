@@ -2835,3 +2835,57 @@ textarea {
   background-color: white;
 padding: 10px;
 } */
+  border-radius: 70px;
+  height: 130px;
+  width: 130px;
+  padding-top: 20px;
+  text-align: center;
+
+}
+
+
+
+/* reviews */
+.container {
+  padding: 20px;
+}
+
+.reviews-container-wrapper {
+  overflow: hidden;
+  width: 100%; /* Full width */
+  margin: 0 auto; /* Center horizontally */
+}
+
+.reviews-container {
+  display: flex;
+  animation: scroll 20s linear infinite; /* Adjust duration as needed */
+}
+
+.review-box {
+  min-width: 300px; /* Adjust width of each review box */
+  max-width: 100%; /* Ensure it fits within the container */
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  padding: 20px;
+  margin: 10px;
+  transition: transform 0.3s ease; /* Smooth transition */
+  cursor: pointer;
+}
+
+.review-box:hover {
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.stars {
+  color: gold;
+  font-size: 30px;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-100% - 20px)); } /* Adjust offset for continuous loop */
+}
+
+.reviews-container-wrapper:hover .reviews-container {
+  animation-play-state: paused;
+}

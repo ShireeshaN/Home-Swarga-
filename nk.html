@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continuous Horizontal Scrolling Google Reviews</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .reviews-container-wrapper {
+            overflow: hidden;
+            width: 100%;
+            padding: 20px 0;
+        }
+
+        .reviews-container {
+            display: flex;
+            /* Ensure flex properties */
+            position: relative; /* Added */
+        }
+
+        .review-box {
+            min-width: 300px;
+            max-width: 100%;
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 20px;
+            margin-right: 20px;
+        }
+
+        .review-box:hover {
+            transform: scale(1.1); /* Zoom effect on hover */
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-5">
+        <h2 class="text-dark text-center pt-5 pb-3">Continuous Horizontal Scrolling Google Reviews</h2>
+        <div class="reviews-container-wrapper">
+            <div class="reviews-container" id="reviews-container">
+                <div class="review-box">
+                    <h4 class="text-dark">Sudhakar Avula</h4>
+                    <div class="stars">&#9733; &#9733; &#9733; &#9733; &#9734;</div>
+                    <p><strong>We were a little hesitant at the beginning but later after talking to them we were sure
+                        that these people can do good work and they did!! They were very skilled and professional.
+                        They did an outstanding job! Pradeep sir and team were amazing. Would Totally recommend to my friends and
+                        family!</strong></p>
+                </div>
+                <div class="review-box">
+                    <h4 class="text-dark">Anil Malayanur</h4>
+                    <div class="stars">&#9733; &#9733; &#9733; &#9733; &#9734;</div>
+                    <p><strong>We went with Home swarga for our interiors in Vasavi srinilayam, lb nagar.
+                        Intially we were little hesitant but after couple of discussions we were confident that these people can
+                        do good work.
+                        Skilled workers,very professional and responsive.
+                        They plan according to our budget and deliver in reasonable time. </strong></p>
+                </div>
+                <div class="review-box">
+                    <h4 class="text-dark">Immortal Wisdom</h4>
+                    <div class="stars">&#9733; &#9733; &#9733; &#9733; &#9734;</div>
+                    <p><strong>For whomsoever a concern of good reliable construction work for ur Dream house 🏘️ this
+                        company is one stop place for ur search.
+                        I have personally gave them work to build my 1st floor but they r visionary & gave me suggestions to build.
+                        2nd floor as store which has worked for me.
+                        Thanks 👍</strong></p>
+                </div>
+                <div class="review-box">
+                    <h4 class="text-dark">Madhu Dubbaka</h4>
+                    <div class="stars">&#9733; &#9733; &#9733; &#9733; &#9734;</div>
+                    <p><strong>I wish Home Swarga all the best And great Success,very recently they have started their
+                        office near to LB Nager... I had wonderful experience with them as I was their old client And recommended to one
+                        my of close friend.they do Known for best service in terms of value for money,
+                        material And
+                        skilled workers.</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('reviews-container');
+
+            // Duplicate reviews for continuous scrolling effect
+            container.innerHTML += container.innerHTML;
+
+            // Function to animate scrolling
+            function animateScroll() {
+                container.style.transition = 'transform 20s linear';
+                container.style.transform = 'translateX(-100%)';
+                setTimeout(() => {
+                    container.style.transition = 'none';
+                    container.style.transform = 'translateX(0)';
+                    if (!container.classList.contains('paused')) {
+                        requestAnimationFrame(animateScroll);
+                    }
+                }, 20000); // Adjust to match animation duration
+            }
+
+            animateScroll(); // Start the animation loop
+
+            // Pause scrolling on mouse enter
+            container.addEventListener('mouseenter', () => {
+                container.classList.add('paused');
+            });
+
+            // Resume scrolling on mouse leave
+            container.addEventListener('mouseleave', () => {
+                container.classList.remove('paused');
+                animateScroll(); // Resume animation
+            });
+
+            // Pause scrolling when hovering over a review box
+            container.addEventListener('mouseover', (event) => {
+                if (event.target.closest('.review-box')) {
+                    container.classList.add('paused');
+                }
+            });
+
+            // Resume scrolling when mouse leaves a review box
+            container.addEventListener('mouseout', (event) => {
+                if (event.target.closest('.review-box')) {
+                    container.classList.remove('paused');
+                    animateScroll(); // Resume animation
+                }
+            });
+        });
+    </script>
+</body>
+</html>
