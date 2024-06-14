@@ -3,48 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Packages</title>
+    <title>Interior Packages</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
+            padding-top: 40px;
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 20px;
         }
 
-        .section-title {
+        .package-title {
             text-align: center;
             margin-bottom: 40px;
         }
 
-        .section-title h2 {
+        .package-title h2 {
             font-size: 36px;
             margin: 0;
             color: #333;
         }
 
-        .section-title span {
+        .package-title span {
             display: block;
             margin-bottom: 10px;
             font-size: 20px;
             color: #FF5733;
         }
 
-        .section-title p {
+        .package-title p {
             color: #666;
         }
 
+        .nav-tabs {
+            border-bottom: 2px solid #ddd;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .nav-tabs .nav-item {
+            margin-bottom: 0;
+        }
+
+        .nav-tabs .nav-link {
+            color: #555;
+            border: none;
+            border-radius: 0;
+            padding: 15px 20px;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-tabs .nav-link.active {
+            background-color: #FF5733;
+            color: #fff;
+            border: none;
+        }
+
         .tab-content {
-            margin-top: 30px;
+            border: 1px solid #ddd;
+            border-top: none;
+            padding: 20px;
         }
 
         .tab-pane {
             padding: 20px;
+            display: none;
+        }
+
+        .tab-pane.active {
+            display: block;
+        }
+
+        .package-card {
+            height: 100%;
+            border: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .package-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .package-card-body {
+            padding: 20px;
+            height: 100%;
         }
 
         .plan-header {
@@ -53,14 +103,11 @@
             margin-bottom: 15px;
         }
 
-        .plan-detail {
-            margin-bottom: 20px;
-        }
-
         .plan-feature {
             list-style: none;
             padding: 0;
             margin: 0;
+            color: #666;
         }
 
         .plan-feature li {
@@ -96,108 +143,170 @@
     <!-- Portfolio Section -->
     <section class="portfolio section">
         <!-- Section Title -->
-        <div class="container section-title">
-            <span>Packages</span>
+        <div class="container package-title">
+            <span>Interior Packages</span>
             <h2>Explore Our Interior Packages</h2>
-            <p>Discover our range of interior packages designed to suit different needs and preferences.</p>
+            <p>Discover our range of interior packages designed for different types of homes.</p>
         </div><!-- End Section Title -->
 
         <div class="container">
             <ul class="nav nav-tabs" id="packageTabs" role="tablist">
                 <li class="nav-item">
-                    <a class="nav-link active" id="2BHK-tab" data-toggle="tab" href="#2BHK" role="tab" aria-controls="2BHK" aria-selected="true">2BHK Package</a>
+                    <a class="nav-link active" id="2BHK-tab" data-toggle="tab" href="#tab-2BHK" role="tab" aria-controls="tab-2BHK" aria-selected="true">2BHK Packages</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="3BHK-tab" data-toggle="tab" href="#3BHK" role="tab" aria-controls="3BHK" aria-selected="false">3BHK Package</a>
+                    <a class="nav-link" id="3BHK-tab" data-toggle="tab" href="#tab-3BHK" role="tab" aria-controls="tab-3BHK" aria-selected="false">3BHK Packages</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="villa-tab" data-toggle="tab" href="#villa" role="tab" aria-controls="villa" aria-selected="false">Villa/Home Package</a>
+                    <a class="nav-link" id="villa-tab" data-toggle="tab" href="#tab-villa" role="tab" aria-controls="tab-villa" aria-selected="false">Villa/Home Packages</a>
                 </li>
             </ul>
 
             <div class="tab-content" id="packageTabsContent">
-                <!-- 2BHK Package Tab -->
-                <div class="tab-pane fade show active" id="2BHK" role="tabpanel" aria-labelledby="2BHK-tab">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <h3 class="plan-header">2BHK Package</h3>
-                            <div class="plan-detail">
-                                <h4 class="plan-header">Budget Friendly</h4>
-                                <p class="ml-2">Includes basic essentials for a 2-bedroom apartment.</p>
+                <!-- Tab panes will go here -->
+                <div class="tab-pane fade show active" id="tab-2BHK" role="tabpanel" aria-labelledby="2BHK-tab">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 mb-4">
+                                <div class="package-card">
+                                    <div class="package-card-body">
+                                        <h3 class="plan-header">Budget Friendly</h3>
+                                        <ul class="plan-feature">
+                                            <li>Basic furniture setup</li>
+                                            <li>Standard fittings</li>
+                                            <li>Limited customization options</li>
+                                        </ul>
+                                        <a href="#" class="buy-btn">Get Quote</a>
+                                    </div>
+                                </div>
                             </div>
-                            <ul class="plan-feature">
-                                <li>GURJAN PLY,710 BWP</li>
-                                <li>FALSE CEILING</li>
-                                <li>Kitchen, Hall, Dining, Bedrooms</li>
-                                <li>KITCHEN UP TO 7/9 "ft"</li>
-                                <li>High Glass Laminates With Multicolor Theme.</li>
-                                <li>5 Tandem Baskets, 1 Bottle Pull Out.</li>
-                            </ul>
-                            <div class="text-center"><a href="contact.html" class="buy-btn">Contact Us</a></div>
-                        </div>
-                        <div class="col-lg-6">
-                            <img src="assets/img/2BHK-package.jpg" class="img-fluid" alt="2BHK Package Image">
+                            <div class="col-lg-4 mb-4">
+                                <div class="package-card">
+                                    <div class="package-card-body">
+                                        <h3 class="plan-header">Value for Money</h3>
+                                        <ul class="plan-feature">
+                                            <li>Enhanced furniture options</li>
+                                            <li>Premium fittings</li>
+                                            <li>Moderate customization</li>
+                                        </ul>
+                                        <a href="#" class="buy-btn">Get Quote</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-4">
+                                <div class="package-card">
+                                    <div class="package-card-body">
+                                        <h3 class="plan-header">End-to-End</h3>
+                                        <ul class="plan-feature">
+                                            <li>Full interior design service</li>
+                                            <li>High-end furniture and fittings</li>
+                                            <li>Extensive customization</li>
+                                        </ul>
+                                        <a href="#" class="buy-btn">Get Quote</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div><!-- End 2BHK Package Tab -->
-
-                <!-- 3BHK Package Tab -->
-                <div class="tab-pane fade" id="3BHK" role="tabpanel" aria-labelledby="3BHK-tab">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <h3 class="plan-header">3BHK Package</h3>
-                            <div class="plan-detail">
-                                <h4 class="plan-header">Premium Option</h4>
-                                <p class="ml-2">Luxury package for a 3-bedroom apartment.</p>
+                </div>
+                <div class="tab-pane fade" id="tab-3BHK" role="tabpanel" aria-labelledby="3BHK-tab">
+                    <!-- Content for 3BHK Packages -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 mb-4">
+                                <div class="package-card">
+                                    <div class="package-card-body">
+                                        <h3 class="plan-header">Budget Friendly</h3>
+                                        <ul class="plan-feature">
+                                            <li>Basic furniture setup</li>
+                                            <li>Standard fittings</li>
+                                            <li>Limited customization options</li>
+                                        </ul>
+                                        <a href="#" class="buy-btn">Get Quote</a>
+                                    </div>
+                                </div>
                             </div>
-                            <ul class="plan-feature">
-                                <li>GURJAN PLY,710 BWP</li>
-                                <li>FALSE CEILING</li>
-                                <li>Kitchen, Hall, Dining, Bedrooms</li>
-                                <li>KITCHEN UP TO 8/10 "ft"</li>
-                                <li>High Glass Laminates With Multicolor Theme.</li>
-                                <li>5 Tandem Baskets, 1 Bottle Pull Out.</li>
-                            </ul>
-                            <div class="text-center"><a href="contact.html" class="buy-btn">Contact Us</a></div>
-                        </div>
-                        <div class="col-lg-6">
-                            <img src="assets/img/3BHK-package.jpg" class="img-fluid" alt="3BHK Package Image">
+                            <div class="col-lg-4 mb-4">
+                                <div class="package-card">
+                                    <div class="package-card-body">
+                                        <h3 class="plan-header">Value for Money</h3>
+                                        <ul class="plan-feature">
+                                            <li>Enhanced furniture options</li>
+                                            <li>Premium fittings</li>
+                                            <li>Moderate customization</li>
+                                        </ul>
+                                        <a href="#" class="buy-btn">Get Quote</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-4">
+                                <div class="package-card">
+                                    <div class="package-card-body">
+                                        <h3 class="plan-header">End-to-End</h3>
+                                        <ul class="plan-feature">
+                                            <li>Full interior design service</li>
+                                            <li>High-end furniture and fittings</li>
+                                            <li>Extensive customization</li>
+                                        </ul>
+                                        <a href="#" class="buy-btn">Get Quote</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div><!-- End 3BHK Package Tab -->
-
-                <!-- Villa/Home Package Tab -->
-                <div class="tab-pane fade" id="villa" role="tabpanel" aria-labelledby="villa-tab">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <h3 class="plan-header">Villa/Home Package</h3>
-                            <div class="plan-detail">
-                                <h4 class="plan-header">Customized Solutions</h4>
-                                <p class="ml-2">Tailored interior solutions for villas and larger homes.</p>
+                </div>
+                <div class="tab-pane fade" id="tab-villa" role="tabpanel" aria-labelledby="villa-tab">
+                    <!-- Content for Villa/Home Packages -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 mb-4">
+                                <div class="package-card">
+                                    <div class="package-card-body">
+                                        <h3 class="plan-header">Budget Friendly</h3>
+                                        <ul class="plan-feature">
+                                            <li>Basic furniture setup</li>
+                                            <li>Standard fittings</li>
+                                            <li>Limited customization options</li>
+                                        </ul>
+                                        <a href="#" class="buy-btn">Get Quote</a>
+                                    </div>
+                                </div>
                             </div>
-                            <ul class="plan-feature">
-                                <li>3D DESIGN</li>
-                                <li>GURJAN PLY,710 BWP</li>
-                                <li>FALSE CEILING (G+1ST)</li>
-                                <li>Kitchen, Hall, Dining, Bedroom</li>
-                                <li>KITCHEN UP TO 8/10 "ft"</li>
-                                <li>High Glass Laminates With Multicolor Theme.</li>
-                                <li>5 Tandem Baskets, 1 Bottle Pull Out.</li>
-                            </ul>
-                            <div class="text-center"><a href="contact.html" class="buy-btn">Contact Us</a></div>
-                        </div>
-                        <div class="col-lg-6">
-                            <img src="assets/img/villa-package.jpg" class="img-fluid" alt="Villa Package Image">
+                            <div class="col-lg-4 mb-4">
+                                <div class="package-card">
+                                    <div class="package-card-body">
+                                        <h3 class="plan-header">Value for Money</h3>
+                                        <ul class="plan-feature">
+                                            <li>Enhanced furniture options</li>
+                                            <li>Premium fittings</li>
+                                            <li>Moderate customization</li>
+                                        </ul>
+                                        <a href="#" class="buy-btn">Get Quote</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-4">
+                                <div class="package-card">
+                                    <div class="package-card-body">
+                                        <h3 class="plan-header">End-to-End</h3>
+                                        <ul class="plan-feature">
+                                            <li>Full interior design service</li>
+                                            <li>High-end furniture and fittings</li>
+                                            <li>Extensive customization</li>
+                                        </ul>
+                                        <a href="#" class="buy-btn">Get Quote</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div><!-- End Villa/Home Package Tab -->
-            </div><!-- End Tab Content -->
-        </div><!-- End Container -->
+                </div>
+            </div>
+        </div>
     </section><!-- End Portfolio Section -->
 
-    <!-- Bootstrap JS and Custom Script -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
