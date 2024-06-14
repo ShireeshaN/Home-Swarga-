@@ -1378,7 +1378,7 @@ section,
 
 
 
-.section-title {
+.service-title {
   text-align: center;
   margin-bottom: 40px;
   display: flex;
@@ -1386,11 +1386,11 @@ section,
   align-items: center;
   gap: 10px;
 }
-.section-title h2 {
+.service-title h2 {
   font-size: 36px;
   margin: 0;
 }
-.section-title .dynamic-service-name {
+.service-title .dynamic-service-name {
   font-size: 36px;
   color: purple; /* Change color as needed */
   white-space: nowrap;
@@ -1446,12 +1446,14 @@ section,
   color: #007bff;
   text-decoration: none;
   transition: all 0.3s ease;
+  text-align: center;
 }
 .read-more:hover {
   color: #0056b3;
 }
 .read-more span {
   margin-right: 5px;
+  text-align: center;
 }
 
 /*--------------------------------------------------------------
