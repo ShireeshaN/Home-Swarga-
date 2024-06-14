@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Cards</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="carousel-container">
+        <div class="carousel-track">
+            <div class="service-item">
+                <img src="assets/img/services/6.png" alt="3D Design Services">
+                <h3>3D Design Services</h3>
+                <p>Transform your space with 3D DESIGN, you’ll save time, money, and headaches by ensuring your vision
+                comes to life exactly as you imagined. Elevate your space with confidence today!</p>
+                <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+            <div class="service-item">
+                <img src="assets/img/services/5.png" alt="Modular Kitchen">
+                <h3>Modular Kitchen</h3>
+                <p>Elevate your home interior to the next level with a modular kitchen! Say goodbye to cluttered spaces and
+                hello to organized, functional, and stylish living.</p>
+                <a href="service.html" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+            <div class="service-item">
+                <img src="assets/img/services/4.png" alt="Wardrobe & Furniture">
+                <h3>Wardrobe & Furniture</h3>
+                <p>Introducing WARDROBE – your ultimate solution to stylish and organized spaces! Our wardrobe designs are
+                crafted to elevate your storage game while adding a touch of elegance to your room.</p>
+                <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+            <div class="service-item">
+                <img src="assets/img/services/3.png" alt="False Ceiling">
+                <h3>False Ceiling</h3>
+                <p>Transform your space with elegance and sophistication using our False Ceiling design. Elevate your
+                surroundings with a touch of luxury and modernity.</p>
+                <a href="service.html" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+            <div class="service-item">
+                <img src="assets/img/services/2.png" alt="Painting & Lighting">
+                <h3>Painting & Lighting</h3>
+                <p>Transform your home with the perfect balance of painting and lighting. Discover how the right hues can
+                breathe life into your space, while strategic lighting choices can create ambiance.</p>
+                <a href="service.html" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+            <div class="service-item">
+                <img src="assets/img/services/1.png" alt="Office Furniture">
+                <h3>Office Furniture</h3>
+                <p>Step into a world where your office space reflects your professionalism and style as much as your home
+                does. Our range of office furniture is not just about functionality; it’s about making a statement.</p>
+                <a href="service.html" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <style>
+      body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f8f9fa;
+}
+
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    margin: 20px auto;
+}
+
+.carousel-track {
+    display: flex;
+    animation: scroll 20s linear infinite;
+}
+
+.service-item {
+    flex: 0 0 300px; /* Adjust width as needed */
+    margin: 10px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+}
+
+.service-item h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.service-item p {
+    color: #555;
+}
+
+.service-item a.read-more {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.service-item a.read-more i {
+    margin-left: 5px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); /* Adjust to translate by the full width of one card */
+    }
+}
+
+.carousel-container:hover .carousel-track {
+    animation-play-state: paused;
+}
+
+
+
+    </style>
+
+    <script src="script.js"></script>
+</body>
+</html>
