@@ -161,17 +161,19 @@ h6 {
 }
 
 
+.header .logo .bgss{
+  border-radius: 50%;
+  background-color: white;
+}
 
-
-.header .logo img {
+.header .logo .bgss img {
   width:100px;
   height: auto;
-  padding-top: 0px;
-  padding-left: 30px;
-  padding-bottom:20px;
+  padding: 20px;
   position: relative;
 
 }
+
 
 /*-- Mobile navbar --*/
 
@@ -2117,9 +2119,7 @@ element.style{
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
+
 
 .border-btm{
   border-bottom: 2px solid #19184D;
@@ -2386,7 +2386,12 @@ textarea {
       height:200px;
       width:300px;
     }
-
+@media(max-width:1000px){
+  .footerimgs{
+    height:200px;
+    max-width:100%;
+  }
+}
     /* hero section form */
   
     /* Custom styles */
@@ -2745,8 +2750,10 @@ textarea {
 /* end to end */
 
 /* logo bg*/
-.bgss {
+/* .bgss {
   background-color: white;
+padding: 10px;
+} */
   border-radius: 70px;
   height: 130px;
   width: 130px;
