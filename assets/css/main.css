@@ -2789,6 +2789,7 @@ padding: 10px;
   margin: 10px;
   transition: transform 0.3s ease; /* Smooth transition */
   cursor: pointer;
+  border-radius: 10px;
 }
 
 .review-box:hover {
@@ -2808,3 +2809,7 @@ padding: 10px;
 .reviews-container-wrapper:hover .reviews-container {
   animation-play-state: paused;
 }
+
+
+
+
