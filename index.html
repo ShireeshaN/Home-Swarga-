@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- WOW.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
   <!-- Favicons -->
   <link href="assets/img/newlogo.png" rel="icon">
@@ -627,6 +628,8 @@
     </section>
     <!-- /About Section-->
 
+   
+
 
 
 
@@ -634,128 +637,173 @@
     <section class="services section pb-5">
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <span class="">Our Services</span>
-        <h2>Our Services</h2>
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Our Services</h2>
+      <h2 class="dynamic-service-name"></h2>
+  </div><!-- End Section Title -->
 
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div id="3d-design" class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item  position-relative">
-              <!-- <div class="icon">
-                <i class="bi bi-activity"></i>
-              </div> -->
-              <img src="assets/img/services/6.png" class="img-fluid" alt="">
-              <a href="#" class="stretched-link">
-                <h3>3D Design Services</h3>
-              </a>
-              <p>Transform your space with 3D DESIGN, you’ll save time, money, and headaches by ensuring your vision
-                comes to life exactly as you imagined. Elevate your space with confidence today!</p>
-              <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+      <div class="p-3">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <!-- Service Items -->
+                <div class="swiper-slide">
+                    <div id="3d-design" class="service-item position-relative" data-aos="fade-up" data-aos-delay="100">
+                        <img src="assets/img/services/6.png" class="img-fluid" alt="">
+                        <a href="#" class="stretched-link"><h3>3D Design Services</h3></a>
+                        <p>Transform your space with 3D DESIGN, you’ll save time, money, and headaches by ensuring your vision
+                            comes to life exactly as you imagined.</p>
+                        <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div id="modular-kitchen" class="service-item position-relative" data-aos="fade-up" data-aos-delay="200">
+                        <img src="assets/img/services/5.png" class="img-fluid" alt="">
+                        <a href="service.html" class="stretched-link"><h3>Modular Kitchen</h3></a>
+                        <p>Elevate your home interior to the next level with a modular kitchen! Say goodbye to cluttered spaces and
+                            hello to organized, functional, and stylish living.</p>
+                        <a href="service.html" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div id="wardrobe-furniture" class="service-item position-relative" data-aos="fade-up" data-aos-delay="300">
+                        <img src="assets/img/services/4.png" class="img-fluid" alt="">
+                        <a href="#" class="stretched-link"><h3>Wardrobe & Furniture</h3></a>
+                        <p>Introducing WARDROBE – your ultimate solution to stylish and organized spaces! Our wardrobe designs are
+                            crafted to elevate your storage game while adding a touch of elegance to your room.</p>
+                        <a href="service.html" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div id="false-ceiling" class="service-item position-relative" data-aos="fade-up" data-aos-delay="400">
+                        <img src="assets/img/services/3.png" class="img-fluid" alt="">
+                        <a href="#" class="stretched-link"><h3>False Ceiling</h3></a>
+                        <p>Transform your space with elegance and sophistication using our False Ceiling design. Elevate your
+                            surroundings with a touch of luxury and modernity.</p>
+                        <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div id="painting-lighting" class="service-item position-relative" data-aos="fade-up" data-aos-delay="500">
+                        <img src="assets/img/services/2.png" class="img-fluid" alt="">
+                        <a href="#" class="stretched-link"><h3>Painting & Lighting</h3></a>
+                        <p>Transform your home with the perfect balance of painting and lighting. Discover how the right hues can
+                            breathe life into your space, while strategic lighting choices can create ambiance.</p>
+                        <a href="service.html" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div id="office-furniture" class="service-item position-relative" data-aos="fade-up" data-aos-delay="600">
+                        <img src="assets/img/services/1.png" class="img-fluid" alt="">
+                        <a href="#" class="stretched-link"><h3>Office Furniture</h3></a>
+                        <p>Step into a world where your office space reflects your professionalism and style as much as your home
+                            does.</p>
+                        <a href="service.html" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Add more service items as needed -->
             </div>
-          </div><!-- End Service Item -->
-
-          <div id="modular-kitchen" class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <!-- <div class="icon">
-                <i class="bi bi-broadcast"></i>
-              </div> -->
-              <img src="assets/img/services/5.png" class="img-fluid" alt="">
-              <a href="service.html" class="stretched-link">
-                <h3>Moduler Kitchen</h3>
-              </a>
-              <p>Elevate your home interior to the next level with a modular kitchen!Say goodbye to cluttered spaces and
-                hello to organized, functional, and stylish living. Elevate your home interior game with our
-                customizable modular kitchen designs that not only enhance the aesthetics but also optimize space
-                utilization. Experience the convenience and luxury of a well-planned modular kitchen – the heart of
-                every modern home.</p>
-              <a href="service.html" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div id="wardrobe-furniture" class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <!-- <div class="icon">
-                <i class="bi bi-easel"></i>
-              </div> -->
-              <img src="assets/img/services/4.png" class="img-fluid" alt="">
-              <a href="#" class="stretched-link">
-                <h3>Wardrobe & Furniture</h3>
-              </a>
-              <p>Introducing WARDROBE – your ultimate solution to stylish and organized spaces! Our wardrobe designs are
-                crafted to elevate your storage game while adding a touch of elegance to your room. Say goodbye to
-                clutter and hello to sophistication with our range of customizable options that cater to all your
-                storage needs. Get ready to transform your space effortlessly with WARDROBE – where style meets
-                functionality!</p>
-              <a href="service.html" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div id="false-ceiling" class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <!-- <div class="icon">
-                <i class="bi bi-bounding-box-circles"></i>
-              </div> -->
-              <img src="assets/img/services/3.png" class="img-fluid" alt="">
-              <a href="#" class="stretched-link">
-                <h3>False Ceiling</h3>
-              </a>
-              <p>Transform your space with elegance and sophistication using our False Ceiling design. Elevate your
-                surroundings with a touch of luxury and modernity that will leave your guests in awe. Create a stunning
-                ambiance in any room, from living spaces to offices, showcasing your unique style and personality. Let
-                our False Ceiling design be the crowning jewel of your interior decor, making every moment spent under
-                it a truly magical experience.</p>
-              <a href="service.html" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div id="painting-lighting" class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item position-relative">
-              <!-- <div class="icon">
-                <i class="bi bi-calendar4-week"></i>
-              </div> -->
-              <img src="assets/img/services/2.png" class="img-fluid" alt="">
-              <a href="#" class="stretched-link">
-                <h3>Painting & Lighting</h3>
-              </a>
-              <p>Transform your home with the perfect balance of painting and lighting. Discover how the right hues can
-                breathe life into your space, while strategic lighting choices can create ambiance and highlight your
-                favorite features. Elevate your surroundings with our expert tips on color selection and lighting
-                placement, turning your house into a warm and inviting sanctuary you’ll never want to leave. Experience
-                the magic of painting and lighting with us today!</p>
-              <a href="service.html" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div id="office-furniture" class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item position-relative">
-              <!-- <div class="icon">
-                <i class="bi bi-chat-square-text"></i>
-              </div> -->
-              <img src="assets/img/services/1.png" class="img-fluid" alt="">
-              <a href="#" class="stretched-link">
-                <h3>Office Furniture</h3>
-              </a>
-              <p>Step into a world where your office space reflects your professionalism and style as much as your home
-                does. Our range of office furniture is not just about functionality; it’s about making a statement.
-                Elevate your workspace with our sleek and modern designs that are guaranteed to impress clients and
-                boost productivity. Redefine how you work with our expertly crafted office furniture – because your
-                success deserves a beautiful setting too.</p>
-              <a href="service.html" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
-
         </div>
-
-      </div>
+    </div>
 
     </section><!-- /Services Section -->
+
+
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          // Service names array
+          var serviceNames = ["3D Design", "Painting", "Wardrobe", "Modular Kitchen", "False Ceiling", "Office Furniture"];
+          var currentIndex = 0;
+          var serviceNameElement = document.querySelector('.dynamic-service-name');
+
+          // Function to update service name
+          function updateServiceName() {
+              serviceNameElement.textContent = serviceNames[currentIndex];
+              currentIndex = (currentIndex + 1) % serviceNames.length;
+          }
+
+          // Initial call to set the first service name
+          updateServiceName();
+
+          // Update service name every 2 seconds
+          setInterval(updateServiceName, 2000);
+
+          // Swiper initialization
+          var swiper = new Swiper('.swiper', {
+              loop: true,
+              speed: 500,
+              autoplay: {
+                  delay: 5000,
+              },
+              slidesPerView: 'auto',
+              spaceBetween: 20,
+              pagination: {
+                  el: '.swiper-pagination',
+                  type: 'bullets',
+                  clickable: true,
+              },
+              breakpoints: {
+                  320: {
+                      slidesPerView: 1,
+                      spaceBetween: 20,
+                  },
+                  480: {
+                      slidesPerView: 2,
+                      spaceBetween: 30,
+                  },
+                  640: {
+                      slidesPerView: 3,
+                      spaceBetween: 40,
+                  },
+                  992: {
+                      slidesPerView: 4,
+                      spaceBetween: 50,
+                  },
+              }
+          });
+      });
+  </script>
+
+
+
+   
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          var swiper = new Swiper('.swiper', {
+              loop: true,
+              speed: 100,
+              autoplay: {
+                  delay: 5000,
+              },
+              slidesPerView: 'auto',
+              spaceBetween: 20,
+              pagination: {
+                  el: '.swiper-pagination',
+                  type: 'bullets',
+                  clickable: true,
+              },
+              breakpoints: {
+                  320: {
+                      slidesPerView: 1,
+                      spaceBetween: 20,
+                  },
+                  480: {
+                      slidesPerView: 2,
+                      spaceBetween: 30,
+                  },
+                  640: {
+                      slidesPerView: 3,
+                      spaceBetween: 40,
+                  },
+                  992: {
+                      slidesPerView: 4,
+                      spaceBetween: 50,
+                  },
+              }
+          });
+      });
+  </script>
 
     
     <section class="ftco-section ftco-no-pt ftco-no-pb">
@@ -1341,6 +1389,7 @@
   <script src="assets/lib/wow/wow.min.js"></script>
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
     document.addEventListener('scroll', function() {
       var element = document.getElementById('myElement');
