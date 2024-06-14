@@ -8,19 +8,26 @@
 
 (function() {
   "use strict";
-
+  $(document).scroll(function() {
+    var element = $('.navbar');
+    if ($(window).scrollTop() > 200) {
+        element.addClass('scroll');
+    } else {
+        element.removeClass('scroll');
+    }
+  });
   /**
    * Apply .scrolled class to the body as the page is scrolled down
    */
-  function toggleScrolled() {
-    const selectBody = document.querySelector('body');
-    const selectHeader = document.querySelector('#header');
-    if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
-    window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
-  }
+  // function toggleScrolled() {
+  //   const selectBody = document.querySelector('body');
+  //   const selectHeader = document.querySelector('#header');
+  //   if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
+  //   window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
+  // }
 
-  document.addEventListener('scroll', toggleScrolled);
-  window.addEventListener('load', toggleScrolled);
+  // document.addEventListener('scroll', toggleScrolled);
+  // window.addEventListener('load', toggleScrolled);
 
   /**
    * Mobile nav toggle
@@ -217,6 +224,14 @@
   }
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
+  $(document).scroll(function() {
+    var element = $('#myElement');
+    if ($(window).scrollTop() > 100) {
+        element.removeClass('fixed-top').addClass('sticky-top');
+    } else {
+        element.removeClass('sticky-top').addClass('fixed-top');
+    }
+  });
 
 })();
 

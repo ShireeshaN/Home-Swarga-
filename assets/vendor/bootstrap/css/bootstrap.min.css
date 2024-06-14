@@ -7109,13 +7109,13 @@ fieldset:disabled .btn {
 .ratio-21x9 {
   --bs-aspect-ratio: 42.8571428571%;
 }
-.fixed-top {
+/* .fixed-top {
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   z-index: 1030;
-}
+} */
 .fixed-bottom {
   position: fixed;
   right: 0;
