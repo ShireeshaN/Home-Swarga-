@@ -1546,6 +1546,145 @@ section,
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
+
+.package-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.package-title h2 {
+  font-size: 36px;
+  margin: 0;
+  color: #333;
+}
+
+.package-title span {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #FF5733;
+}
+
+.package-title p {
+  color: #666;
+}
+
+.nav-tabs {
+  border-bottom: 2px solid #ddd;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.nav-tabs .nav-item {
+  margin-bottom: 0;
+}
+
+.nav-tabs .nav-link {
+  color: #555;
+  border: none;
+  border-radius: 0;
+  padding: 15px 20px;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #FF5733;
+  color: #fff;
+  border: none;
+}
+
+.tab-content {
+  border: 1px solid #ddd;
+  border-top: none;
+  padding: 20px;
+}
+
+.tab-pane {
+  padding: 20px;
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+.package-card {
+  height: 100%;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.package-card:hover {
+  transform: translateY(-10px);
+}
+
+.package-card-body {
+  padding: 20px;
+  height: 100%;
+}
+
+.plan-header {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.plan-feature {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #666;
+}
+
+.plan-feature li {
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.plan-feature li:before {
+  content: "\2022";
+  color: #FF5733;
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+
+.buy-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FF5733;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.buy-btn:hover {
+  background-color: #C70039;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  .portfolio .portfolio-filters {
   padding: 0;
   margin: 0 auto 20px auto;
@@ -1621,7 +1760,7 @@ section,
   
 }
 .plan-header{
-  color: #FFFFFF;
+  color: black;
 }
 
 .portfolio .portfolio-item .portfolio-info {
