@@ -56,7 +56,7 @@
     <!-- Hero Section -->
 
     <section class="hero section navbar-container call-to-actions">
-      <header id="header" class="header fixed-top">
+      <header id=" myElement" class="header fixed-top">
 
         <div class="topbar d-flex align-items-center">
           <div class="container d-flex justify-content-center justify-content-md-end">
@@ -184,19 +184,7 @@
 
         </div>
       </div>
-      <!-- <style>
-        @media (max-width:992px){
-          .containers {
-            margin: 30px;
-          }
-        }    
-    .containers {
-      background-color:transparent;
       
-    }
-   
-    
-  </style> -->
     </section>
     <!-- /Hero Section -->
 
@@ -206,6 +194,13 @@
         color: white;
         font-weight: bold;
       }
+      .sticky-top {
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
     </style>
 
     <!-- Team Section -->
@@ -898,9 +893,7 @@
    
    }
 
-   .mbs{
-     
-   }
+  
    @media(max-width:992px){
     .kit2{
       left: 0;
@@ -1342,6 +1335,18 @@
   <script src="assets/lib/wow/wow.min.js"></script>
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener('scroll', function() {
+      var element = document.getElementById('myElement');
+      if (window.scrollY > 200) {
+          element.classList.remove('fixed-top');
+          element.classList.add('sticky-top');
+      } else {
+          element.classList.remove('sticky-top');
+          element.classList.add('fixed-top');
+      }
+  });
+  </script>
   <script>
     new WOW().init();
 </script>
