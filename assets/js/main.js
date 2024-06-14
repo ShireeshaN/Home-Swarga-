@@ -16,6 +16,12 @@
         element.removeClass('scroll');
     }
   });
+  const open = document.querySelector(".nav-item.drop-down");
+const btn = document.getElementById("plus");
+
+btn.addEventListener("click", () => {
+  open.classList.toggle("active");
+});
   /**
    * Apply .scrolled class to the body as the page is scrolled down
    */
