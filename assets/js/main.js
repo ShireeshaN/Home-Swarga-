@@ -263,3 +263,14 @@ const autoScrollInterval = setInterval(() => {
       behavior: 'smooth'
   });
 }, 3000); // Adjust the interval time (in milliseconds) as needed
+
+//reviews scroll
+document.addEventListener('DOMContentLoaded', () => {
+  const container = document.getElementById('reviews');
+  container.addEventListener('mouseover', () => {
+      container.style.animationPlayState = 'paused';
+  });
+  container.addEventListener('mouseout', () => {
+      container.style.animationPlayState = 'running';
+  });
+});
