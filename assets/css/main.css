@@ -2828,7 +2828,13 @@ textarea {
   font-weight: 900;
   transition: .5s;
 }
-
+.collapse{
+  display: none;
+}
+.collapse.show{
+  display: block !important;
+  background-color: black;
+}
 .faqs .card-header [data-toggle="collapse"][aria-expanded="true"]:after {
   font-family: 'font Awesome 5 Free';
   content: "\f068";
@@ -2986,13 +2992,13 @@ textarea {
   background-color: white;
 padding: 10px;
 } */
-  border-radius: 70px;
+  /* border-radius: 70px;
   height: 130px;
   width: 130px;
   padding-top: 20px;
   text-align: center;
 
-}
+} */
 
 
 

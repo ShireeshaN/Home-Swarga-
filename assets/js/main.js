@@ -8,6 +8,22 @@
 
 (function() {
   "use strict";
+  const preloader = document.querySelector('#preloader');
+  if (preloader) {
+    window.addEventListener('load', () => {
+        preloader.remove();
+    });
+  }
+  $(document).scroll(function() {
+    var element = $('.navbar');
+    if ($(window).scrollTop() > 200) {
+        element.addClass('scroll');
+    } else {
+        element.removeClass('scroll');
+    }
+  });
+  const open = document.querySelector(".nav-item.drop-down");
+const btn = document.getElementById("plus");
 
   /**
    * Apply .scrolled class to the body as the page is scrolled down
@@ -28,7 +44,7 @@
   const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
 
   function mobileNavToogle() {
-    document.querySelector('body').classList.toggle('mobile-nav-active');
+    document.querySelector('.collapse').classList.toggle('show');
     mobileNavToggleBtn.classList.toggle('bi-list');
     mobileNavToggleBtn.classList.toggle('bi-x');
   }
@@ -86,12 +102,7 @@
   /**
    * Preloader
    */
-  const preloader = document.querySelector('#preloader');
-  if (preloader) {
-    window.addEventListener('load', () => {
-      preloader.remove();
-    });
-  }
+
 
   /**
    * Scroll top button
@@ -274,7 +285,3 @@ document.addEventListener('DOMContentLoaded', () => {
       container.style.animationPlayState = 'running';
   });
 });
-
-
-
-

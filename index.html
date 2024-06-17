@@ -8,9 +8,7 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WOW.js Example</title>
+    
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- WOW.js -->
@@ -34,12 +32,13 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
   <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./header.css">
   <style>
     .member {
       position: relative;
@@ -48,146 +47,103 @@
   </style>
 </head>
 
-<body class="index-page">
+<body class="">
 
 
 
   <main class="main ">
 
-    <!-- Hero Section -->
-
-    <section class="hero section navbar-container call-to-actions">
-      <header id=" myElement" class="header fixed-top">
-
-        <div class="topbar d-flex align-items-center">
-          <div class="container d-flex justify-content-center justify-content-md-end">
-            <div class="contact-info d-flex align-items-center">
-              <i class="bi bi-envelope d-flex align-items-center"><a
-                  href="mailto:contact@example.com">hello@homeswarga.com</a></i>
-              <i class="bi bi-phone d-flex align-items-center ms-4"><span>+ 91 9063666369 </span></i>
-            </div>
-            <div class="social-links d-none d-md-flex align-items-center">
-              <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-        </div><!-- End Top Bar -->
-
-        <div class="branding d-flex align-items-center ">
-
-          <div class="container  position-relative d-flex align-items-center justify-content-between  px-5">
-            <div class="logo-container text-center">
-              <a href="index.html" class="logo">
-                <!-- Uncomment the line below if you also wish to use an image logo -->
-                <div class="bgss">
-                  <img src="assets/img/newlogo.png" alt="logo" class="logo-img">
-                </div>
-                <!-- <h1 class="sitename">Day</h1> -->
-                <!-- <img src="assets/img/logo.png" alt=""> -->
-
-              </a>
-            </div>
-
-           
-            <nav id="navmenu" class="navmenu">
-              <ul>
-                <li><a href="index.html" class="active text-white">Home</a></li>
-                <li><a href="about.html" class=" text-white" >Why We</a></li>
+   <!-- header -->
+   <header id="site-header" class="fixed-top">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="/">
                
+                <img src="./assets/img/newlogo.png" alt="Elysian Dental Care" class="logo p-2" />
                
-              
-                <li class="dropdown"><a href="service.html" class=" text-white"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                    
-                    <li><a href="full-home-services.html">Full Home</a></li>
-                    <li><a href="kitchens.html">Kitchen Types</a></li>
-                   
-                  </ul>
-                </li>
-                  
-                </li>
-               
-                <li><a href="join-as-a-Professional.html" class=" text-white">Join as a Professional</a></li>
+            </a>
+            
+            <div class="d-flex justify-content-center align-items-center">
+              <i class="mobile-nav-toggle d-xl-none bi bi-list mt-3"></i>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav ms-auto me-2 my-2 my-lg-0 navbar-nav-scroll">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">Why We</a>
+                    </li>
+                    <li class="nav-item  drop-down">
+                        <div class="drop">
+                            <a class="nav-link " href="./services.html">Services <i class="fa fa-angle-down"></i> </a>
+                            <p class="nav-link" id="plus"><i class="fa fa-angle-down"></i></p>
+                        </div>
 
-                <li><a href="contact.html" class=" text-white">Contact</a></li>
-                <li><a href="faq.html" class=" text-white">FAQ</a></li>
-              </ul>
-              <div class="d-flex justify-content-center align-items-center">
-                <i class="mobile-nav-toggle d-xl-none bi bi-list mt-3"></i>
-              </div>
-            </nav>
-          </div>
+                        <ul class="drop-items">
+                          <li><a href="./full-home-services.html">Full Home Services</a></li>
+                          <li><a href="./kitchens.html">Kitchen Types</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="join-as-a-Professional.html">Join As a Professional</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
 
-        </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">Faq</a>
+                    </li>
 
-      </header>
+                </ul>
 
-
-      <img src="assets/img/internal-living-room-concept-design-scaled.jpg" alt="" data-aos="fade-in">
-
-
-
-
-      <div class="container pt-5" data-aos="fade-up" data-aos-delay="100">
-        <div class="row justify-content-between">
-
-          <div class="col-lg-8">
-            <h class="cc">PAY FOR QUALITY</h><br />
-            <h class="cc">NOT FOR OUR</h><br />
-            <h class="cc">PROFIT</h> <br />
-            <h class="text-white">Quality interiors without the hefty price tag – Affordable Comfort, priceless
-              satisfaction.</h>
-          </div>
-
-          <!-- <div class="col-lg-3">
-            <div class="containers bg-white rounded p-3">
-              <h4 class="text-center text-dark pt-4 pb-3">Get Package Offers</h4>
-            <form>
-              <div class="form-group pb-3">
+            </div>
           
-                <input type="text" class="form-control" id="name" placeholder="Name" required>
-              </div>
-              <div class="form-group pb-3">
-                
-                <input type="email" class="form-control" id="email" placeholder="Phone No" required>
-              </div>
-              <div class="form-group pb-3">
-               
-                <input type="text" class="form-control" id="subject" placeholder="Site Location" required>
-              </div>
-              <button type="submit" class="btn btn-primary btn-block "><a href="contact.html" class="text-white">Send Message</button></a>
-            </form>
+        </nav>
+    </div>
+</header>
+<!-- //header -->
+<!-- banner section -->
+<section class="w3l-main-slider" id="home">
+    <div class="banner-content ">
+        <div id="demo-1">
+            <div class="demo-inner-content top-hero">
+                <div class="container">
+                    <div class="row">
+                    <div class=" col-lg-7 align-content-center">
+                        <p class="mb-1">Elevate your smile’s with our</p>
+                        <h1 style="color: white;font-weight: 800;">Best Dental Clinic in Kondapur</h1>
+                        <!-- <a class="btn btn-style btn-style-2 mt-sm-5 mt-4 book-now" href="./appointment.html">Book Now</a> -->
+                    </div>
+                    <div id="home-contact-form" class="left-container col-lg-4">
+                      <h4 class="mb-4">Get Package Offers</h4>
+                      <form>
+                        <div class="form-group">
+                          <label for="name">Name</label>
+                          <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="phone">Phone Number</label>
+                          <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                        </div>
+          
+                        <div class="form-group pb-5">
+                          <label for="location">Site Location</label>
+                          <input type="text" class="form-control" id="location" placeholder="Enter your site location" required>
+                        </div>
+                        <button id="messageForm" action="send_message.php" method="post" type="submit"
+                          class="button btn btn-primary btn-center">Submit</button>
+                      </form>
+                    </div>
+                </div>
+                </div>
             </div>
-          </div> -->
-          <div id="home-contact-form" class="left-container col-lg-4">
-            <h4 class="mb-4">Get Package Offers</h4>
-            <form>
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
-              </div>
-              <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
-              </div>
-
-              <div class="form-group pb-5">
-                <label for="location">Site Location</label>
-                <input type="text" class="form-control" id="location" placeholder="Enter your site location" required>
-              </div>
-              <button id="messageForm" action="send_message.php" method="post" type="submit"
-                class="button btn btn-primary btn-center">Submit</button>
-            </form>
-          </div>
-
-
         </div>
-      </div>
-      
-    </section>
-    <!-- /Hero Section -->
+    </div>
+</section>
+<!-- //banner section -->
 
     <style>
       .cc {
@@ -201,6 +157,14 @@
     right: 0;
     left: 0;
     z-index: 1030;
+}
+.top-hero{
+  padding-top: 3rem;
+}
+@media(max-width:992px){
+  .top-hero{
+  padding-top: 6rem;
+}
 }
     </style>
 
@@ -994,7 +958,7 @@
               <div class="review-box bg-info">
                   <h4 class="text-dark"><strong>Immortal Wisdom</strong></h4>
                   <div class="stars">&#9733; &#9733; &#9733; &#9733; &#9734;</div>
-                  <p class="text-white fst-italic" style="text-align: justify;"><strong>For whomsoever a concern of good reliable construction work for ur Dream house 🏘️ this
+                  <p class="text-white fst-italic" style="text-align: justify;"><strong>For whomsoever a concern of good reliable construction work for ur Dream house 🏘 this
                       company is one stop place for ur search.
                       I have personally gave them work to build my 1st floor but they r visionary & gave me suggestions to build.
                       2nd floor as store which has worked for me.
@@ -1029,7 +993,7 @@
             <div class="review-box bg-info">
                 <h4 class="text-dark"><strong>Immortal Wisdom</strong></h4>
                 <div class="stars">&#9733; &#9733; &#9733; &#9733; &#9734;</div>
-                <p class="text-white fst-italic" style="text-align: justify;"><strong>For whomsoever a concern of good reliable construction work for ur Dream house 🏘️ this
+                <p class="text-white fst-italic" style="text-align: justify;"><strong>For whomsoever a concern of good reliable construction work for ur Dream house 🏘 this
                     company is one stop place for ur search.
                     I have personally gave them work to build my 1st floor but they r visionary & gave me suggestions to build.
                     2nd floor as store which has worked for me.
@@ -1064,7 +1028,7 @@
           <div class="review-box bg-info">
               <h4 class="text-dark"><strong>Immortal Wisdom</strong></h4>
               <div class="stars">&#9733; &#9733; &#9733; &#9733; &#9734;</div>
-              <p class="text-white fst-italic" style="text-align: justify;"><strong>For whomsoever a concern of good reliable construction work for ur Dream house 🏘️ this
+              <p class="text-white fst-italic" style="text-align: justify;"><strong>For whomsoever a concern of good reliable construction work for ur Dream house 🏘 this
                   company is one stop place for ur search.
                   I have personally gave them work to build my 1st floor but they r visionary & gave me suggestions to build.
                   2nd floor as store which has worked for me.
@@ -1390,17 +1354,13 @@
   <script src="assets/js/main.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
-    document.addEventListener('scroll', function() {
-      var element = document.getElementById('myElement');
-      if (window.scrollY > 200) {
-          element.classList.remove('fixed-top');
-          element.classList.add('sticky-top');
-      } else {
-          element.classList.remove('sticky-top');
-          element.classList.add('fixed-top');
-      }
-  });
-  </script>
+const open = document.querySelector(".nav-item.drop-down");
+const btn = document.getElementById("plus");
+
+btn.addEventListener("click", () => {
+  open.classList.toggle("active");
+});
+ </script>
   <script>
     new WOW().init();
 </script>
