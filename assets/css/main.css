@@ -2818,7 +2818,13 @@ textarea {
   font-weight: 900;
   transition: .5s;
 }
-
+.collapse{
+  display: none;
+}
+.collapse.show{
+  display: block !important;
+  background-color: black;
+}
 .faqs .card-header [data-toggle="collapse"][aria-expanded="true"]:after {
   font-family: 'font Awesome 5 Free';
   content: "\f068";
