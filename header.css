@@ -142,8 +142,19 @@ h1 {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+
 .drop p {
   float: right;
+}
+@media(max-width:992px){
+  .drop{
+    display: flex;
+    justify-content: space-between;
+  }
+  .drop a .fa-angle-down{
+    display: none;
+  }
 }
 
 #plus {
