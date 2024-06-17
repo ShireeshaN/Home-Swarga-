@@ -25,21 +25,18 @@
   const open = document.querySelector(".nav-item.drop-down");
 const btn = document.getElementById("plus");
 
-btn.addEventListener("click", () => {
-  open.classList.toggle("active");
-});
   /**
    * Apply .scrolled class to the body as the page is scrolled down
    */
-  // function toggleScrolled() {
-  //   const selectBody = document.querySelector('body');
-  //   const selectHeader = document.querySelector('#header');
-  //   if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
-  //   window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
-  // }
+  function toggleScrolled() {
+    const selectBody = document.querySelector('body');
+    const selectHeader = document.querySelector('#header');
+    if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
+    window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
+  }
 
-  // document.addEventListener('scroll', toggleScrolled);
-  // window.addEventListener('load', toggleScrolled);
+  document.addEventListener('scroll', toggleScrolled);
+  window.addEventListener('load', toggleScrolled);
 
   /**
    * Mobile nav toggle
@@ -231,14 +228,6 @@ btn.addEventListener("click", () => {
   }
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
-  $(document).scroll(function() {
-    var element = $('#myElement');
-    if ($(window).scrollTop() > 100) {
-        element.removeClass('fixed-top').addClass('sticky-top');
-    } else {
-        element.removeClass('sticky-top').addClass('fixed-top');
-    }
-  });
 
 })();
 
@@ -296,7 +285,3 @@ document.addEventListener('DOMContentLoaded', () => {
       container.style.animationPlayState = 'running';
   });
 });
-
-
-
-
