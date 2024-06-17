@@ -8,6 +8,12 @@
 
 (function() {
   "use strict";
+  const preloader = document.querySelector('#preloader');
+  if (preloader) {
+    window.addEventListener('load', () => {
+        preloader.remove();
+    });
+  }
   $(document).scroll(function() {
     var element = $('.navbar');
     if ($(window).scrollTop() > 200) {
@@ -99,12 +105,7 @@ btn.addEventListener("click", () => {
   /**
    * Preloader
    */
-  const preloader = document.querySelector('#preloader');
-  if (preloader) {
-    window.addEventListener('load', () => {
-      preloader.remove();
-    });
-  }
+
 
   /**
    * Scroll top button
