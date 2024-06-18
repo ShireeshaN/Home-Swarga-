@@ -336,6 +336,7 @@ h6 {
     /* margin-right: 10px; */
     cursor: pointer;
     transition: color 0.3s;
+   display: none;
   }
 
   .navmenu {
@@ -459,7 +460,11 @@ color: var(--contrast-color);
     /* color: #000000; */
   }
 }
-
+@media(max-width:992px){
+  .mobile-nav-toggle{
+    display: block;
+  }
+}
 /* Listing Dropdown - Desktop */
 @media (min-width: 1200px) {
   .navmenu .listing-dropdown {

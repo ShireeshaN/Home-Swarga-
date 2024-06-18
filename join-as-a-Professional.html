@@ -15,8 +15,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -26,94 +27,111 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./header.css"> 
+ 
 </head>
 
 <body class="starter-page-page">
 
   
   
-  <section class="hero1 section navbar-container call-to-actions">
-    <header id="header" class="header fixed-top">
-
-      <div class="topbar d-flex align-items-center">
-        <div class="container d-flex justify-content-center justify-content-md-end">
-          <div class="contact-info d-flex align-items-center">
-            <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">hello@homeswarga.com</a></i>
-            <i class="bi bi-phone d-flex align-items-center ms-4"><span>+ 91 9063666369 </span></i>
-          </div>
-          <div class="social-links d-none d-md-flex align-items-center">
-            <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
-      </div><!-- End Top Bar -->
-  
-      <div class="branding d-flex align-items-center ">
-  
-        <div class="container  position-relative d-flex align-items-center justify-content-between  px-5">
-          <div class="logo-container">
-            <a href="index.html" class="logo">
-              <div class="bgss">
-                <img src="assets/img/newlogo.png" alt="logo" class="logo-img">
-              </div>
-              
+  <header id="site-header" class="fixed-top">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light p-2">
+            <a class="navbar-brand" href="/">
+               
+                <img src="./assets/img/newlogo.png" alt="Elysian Dental Care" class="logo p-2" />
+               
             </a>
-          </div>
-          
-  
-          <nav id="navmenu" class="navmenu" >
-            <ul>
-              <li><a href="index.html" class="text-white">Home</a></li>
-              <li><a href="about.html" class=" text-white" >Why We</a></li>
-             
-             
             
-              <li class="dropdown"><a href="#" class=" text-white"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  
-                  <li><a href="full-home-services.html">Full Home Services</a></li>
-                  <li><a href="kitchens.html">Kitchen Types</a></li>
-                 
-                </ul>
-              </li>
-              
-              <li><a href="join-as-a-Professional.html" class="active text-white">Join as a Professional</a></li>
-              
-              <li><a href="contact.html" class=" text-white">Contact</a></li>
-              <li><a href="Faq.html" class=" text-white">Faq</a></li>
-            </ul>
             <div class="d-flex justify-content-center align-items-center">
-            <i class="mobile-nav-toggle d-xl-none bi bi-list mt-3"></i>
+              <i class="mobile-nav-toggle d-xl-none bi bi-list mt-3"></i>
             </div>
-          </nav>
-        </div>
-  
-      </div>
-  
-    </header>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav ms-auto me-2 my-2 my-lg-0 navbar-nav-scroll">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">Why We</a>
+                    </li>
+                    <li class="nav-item  drop-down">
+                        <div class="drop">
+                            <a class="nav-link " href="#">Services <i class="fa fa-angle-down text-white"></i> </a>
+                            <p class="nav-link" id="plus"><i class="fa fa-angle-down"></i></p>
+                        </div>
 
+                        <ul class="drop-items">
+                          <li><a href="./full-home-services.html">Full Home Services</a></li>
+                          <li><a href="./kitchens.html">Kitchen Types</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="./join-as-a-Professional.html">Join As a Professional</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
 
-    <img src="assets/img/join professional/bannerimg.jpeg" alt="" data-aos="fade-in">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./faq.html">Faq</a>
+                    </li>
 
- 
+                </ul>
 
-    <div class="container " data-aos="fade-up" data-aos-delay="100">
-      <div class="row justify-content-start">
-        <div class="col-lg-8">
-          <h2 class="">JOIN </h2>
-          <h2 class="">AS A</h2>
-          <h2 class="">PROFESSIONAL</h2>
+            </div>
           
-          
-        </div>
-      </div>
+        </nav>
     </div>
+</header>
+<!-- //header -->
+<!-- banner section -->
+<section class="w3l-main-slider hero1" id="home">
+    <div class="banner-content ">
+        <div>
+          <img class="imgclass " src="assets/img/join professional/bannerimg.jpeg"/>
+          
+            <div class="demo-inner-content top-hero">
+                <div class="container">
+                    <div class="row">
+                    <div class=" col-lg-12 text-start">
+                       
+                      <h1 style="color: white;font-weight: 800; font-size: 80px; ">Join As a Professional</h1>
+                        </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //banner section -->
 
-  </section>
+    <style>
+      .cc {
+        font-size: 70px;
+        color: white;
+        font-weight: bold;
+      }
+      .sticky-top {
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.top-hero{
+  padding-top: 3rem;
+}
+@media(max-width:992px){
+  .top-hero{
+  padding-top: 6rem;
+}
+}
+    </style>
+
+  <!-- <img src="assets/img/join professional/bannerimg.jpeg" alt="" data-aos="fade-in"> -->
 
   <main class="main">
     <!-- Page Title -->
@@ -367,7 +385,7 @@
  <section class="container-fluid contact-form pb-3 scroll-section" id="query">
   <div class="text-center mx-auto pt-5 pb-3 wow fadeIn" data-wow-delay=".3s">
 
-      <h1 class="mb-3 text-decoration-underline text-white" style="font: size 30px;">Contact for Any Query</h1>
+      <h1 class="mb-3 text-white" style="font: size 30px;">Contact for Any Query</h1>
 
   </div>
   <div class="rounded p-5">
@@ -410,35 +428,28 @@
               <div class="contact-page">
 
 
-                  <div class="col col-lg-12">
-                      <div class="form-div ">
-                          <form id="myForm" method="POST">
-                            
-                              <input type="text" id="name" class="input" name="name" required
-                                  placeholder="Full Name">
-                                
-                                
-                              <input type="email" class="input" id="email" name="email" required
-                                  placeholder="Email">
-                                
+                <div id="home-contact-form" class=" col-lg-8">
                   
-                              <input type="text" class="input" id="number" name="phone" required
-                                  placeholder="Phone">
-                                
-                                
-                              <input type="text" class="input" id="service" name="service" required
-                                  placeholder="Service Required">
-                                
-                                
-                              <textarea class="input" name="message" id="message" required placeholder="Message"
-                                  rows="3"></textarea>
-                                
-                                
-                              <input type="submit" name="submit" class="form-btn" value="SEND">
-                            
-                          </form>
-                      </div>
-                  </div>
+                  <form>
+                    <div class="form-group">
+                      <label class="text-white" for="name">Name</label>
+                      <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                      <label class="text-white" for="phone">Phone Number</label>
+                      <input type="text" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                    </div>
+      
+                    <div class="form-group">
+                      <label class="text-white" for="location">Site Location</label>
+                      <input type="text" class="form-control" id="location" placeholder="Enter your site location" required>
+                    </div>
+                    <button id="messageForm" action="send_message.php" method="post" type="submit"
+                      class="button btn btn-center">Submit</button>
+                  </form>
+
+
+                </div>
               </div>
 
           </div>
@@ -538,9 +549,9 @@
   <!-- Scroll Top -->
   <a href="#"  class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Preloader -->
-  <div></div>
-
+   <!-- Preloader -->
+   <div id="preloader"></div>
+ 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
