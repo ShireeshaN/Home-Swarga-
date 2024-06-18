@@ -14,16 +14,15 @@
         preloader.remove();
     });
   }
-  $(document).scroll(function() {
-    var element = $('.navbar');
-    if ($(window).scrollTop() > 200) {
-        element.addClass('scroll');
+
+  document.addEventListener('scroll', function() {
+    var element = document.querySelector('.navbar');
+    if (window.scrollY > 200) {
+        element.classList.add('scroll');
     } else {
-        element.removeClass('scroll');
+        element.classList.remove('scroll');
     }
-  });
-  const open = document.querySelector(".nav-item.drop-down");
-const btn = document.getElementById("plus");
+});
 
   /**
    * Apply .scrolled class to the body as the page is scrolled down
