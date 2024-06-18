@@ -110,10 +110,6 @@
                        
                       <h1 style="color: white;font-weight: 800; font-size: 80px; ">Why We</h1>
                         </div>
-
-                   
-
-
                 </div>
                 </div>
             </div>
@@ -437,13 +433,12 @@
  <section class="container-fluid contact-form pb-3 scroll-section" id="query">
   <div class="text-center mx-auto pt-5 pb-3 wow fadeIn" data-wow-delay=".3s">
 
-    
-      <h1 class="mb-3 text-decoration-underline text-white" style="font: size 30px;">Contact for Any Query</h1>
+      <h1 class="mb-3 text-white" style="font: size 40px;">Contact for Any Query</h1>
 
   </div>
   <div class="rounded p-5">
       <div class="row g-5 mb-5 justify-content-center">
-          <div class="col-lg-6 wow fadeIn" data-wow-delay=".3s">
+          <div class="col-lg-6 wow fadeInRight" data-wow-delay=".3s">
               <div class="d-flex mb-3 p-3 rounded">
                   <div class="flex-shrink-0 btn-square bg-light rounded-circle"
                       style="width: 64px; height: 64px;">
@@ -476,54 +471,40 @@
                   </div>
               </div>
           </div>
-          <div class="col-lg-6 col-md-12 col-sm-12 wow fadeIn" data-wow-delay=".5s">
+          <div class="col-lg-6 col-md-12 col-sm-12 wow fadeInLeft" data-wow-delay=".5s">
 
               <div class="contact-page">
 
 
-                  <div class="col col-lg-12">
-                      <div class="form-div ">
-                          <form id="myForm" method="POST">
-                            
-                              <input type="text" id="name" class="input" name="name" required
-                                  placeholder="Full Name">
-                                
-                                
-                              <input type="email" class="input" id="email" name="email" required
-                                  placeholder="Email">
-                                
+                <div id="home-contact-form" class=" col-lg-8">
                   
-                              <input type="text" class="input" id="number" name="phone" required
-                                  placeholder="Phone">
-                                
-                                
-                              <input type="text" class="input" id="service" name="service" required
-                                  placeholder="Service Required">
-                                
-                                
-                              <textarea class="input" name="message" id="message" required placeholder="Message"
-                                  rows="3"></textarea>
-                                
-                                
-                              <input type="submit" name="submit" class="form-btn" value="SEND">
-                            
-                          </form>
-                      </div>
-                  </div>
+                  <form>
+                    <div class="form-group">
+                      <label class="text-white" for="name">Name</label>
+                      <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                      <label class="text-white" for="phone">Phone Number</label>
+                      <input type="text" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                    </div>
+      
+                    <div class="form-group">
+                      <label class="text-white" for="location">Site Location</label>
+                      <input type="text" class="form-control" id="location" placeholder="Enter your site location" required>
+                    </div>
+                    <button id="messageForm" action="send_message.php" method="post" type="submit"
+                      class="button btn btn-center">Submit</button>
+                  </form>
+
+
+                </div>
               </div>
 
           </div>
       </div>
   </div>
-  <div class="row">
-      <div class="col-12">
-          <div class="rounded">
-            <iframe class="w-100 mb-n2" style="height: 450px;"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15228.976847984206!2d78.554893!3d17.400064!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb98c9fc0b2dfb%3A0x3de29da73d0c7f7b!2sHome%20Swarga!5e0!3m2!1sen!2sus!4v1717049293378!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-      </div>
-  </div>
 </section>
+
 <!-- Contact End -->
 
 
