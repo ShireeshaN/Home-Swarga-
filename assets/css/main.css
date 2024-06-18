@@ -2631,13 +2631,17 @@ textarea {
       float: right;
       width: 30%; /* Adjust the width as needed */
       padding: 20px;
-      height: 500px;
+      height: auto;
       background: linear-gradient(135deg, #ff6fd8, #4b6cb7, #71b280);
       border-radius: 10px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
       color: white;
     }
-  
+  @media(max-width:992px){
+    .left-container{
+      width: 100%;
+    }
+  }
     .form-group {
       margin-bottom: 1.5rem;
     }
@@ -2833,7 +2837,7 @@ textarea {
 }
 .collapse.show{
   display: block !important;
-  background-color: black;
+  /* background-color: black; */
 }
 .faqs .card-header [data-toggle="collapse"][aria-expanded="true"]:after {
   font-family: 'font Awesome 5 Free';
