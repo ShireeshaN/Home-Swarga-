@@ -56,7 +56,7 @@
    <!-- header -->
    <header id="site-header" class="fixed-top">
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light p-2">
             <a class="navbar-brand" href="/">
                
                 <img src="./assets/img/newlogo.png" alt="Elysian Dental Care" class="logo p-2" />
@@ -106,15 +106,17 @@
 </header>
 <!-- //header -->
 <!-- banner section -->
-<section class="w3l-main-slider" id="home">
+<section class="w3l-main-slider pb-4" id="home">
     <div class="banner-content ">
         <div id="demo-1">
             <div class="demo-inner-content top-hero">
                 <div class="container">
                     <div class="row">
                     <div class=" col-lg-7 align-content-center">
-                        <p class="mb-1">Elevate your smile’s with our</p>
-                        <h1 style="color: white;font-weight: 800;">Best Dental Clinic in Kondapur</h1>
+                       
+                        <h1 style="color: white;font-weight: 800; font-size: 80px;">PAY FOR QUALITY
+                          NOT FOR OUR PROFIT</h1>
+                          <p class="text-white">Quality interiors without the hefty price tag – Affordable Comfort, priceless satisfaction.</p>
                         <!-- <a class="btn btn-style btn-style-2 mt-sm-5 mt-4 book-now" href="./appointment.html">Book Now</a> -->
                     </div>
                     <div id="home-contact-form" class="left-container col-lg-4">
@@ -126,10 +128,10 @@
                         </div>
                         <div class="form-group">
                           <label for="phone">Phone Number</label>
-                          <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                          <input type="text" class="form-control" id="phone" placeholder="Enter your phone number" required>
                         </div>
           
-                        <div class="form-group pb-5">
+                        <div class="form-group pb-2">
                           <label for="location">Site Location</label>
                           <input type="text" class="form-control" id="location" placeholder="Enter your site location" required>
                         </div>
@@ -159,11 +161,14 @@
     z-index: 1030;
 }
 .top-hero{
-  padding-top: 3rem;
+  padding-top: 5rem;
 }
 @media(max-width:992px){
   .top-hero{
   padding-top: 6rem;
+}
+.navbar{
+background-color: #19184D;
 }
 }
     </style>
@@ -172,9 +177,9 @@
     <section class="team section">
 
       <!-- Section Title -->
-      <div class="section-title" data-aos="fade-up">
+      <div class="section-title pb-0 mb-0" data-aos="fade-up">
         <span class="">Interior</span>
-        <h2>Elevate Your Space With Our Curated
+        <h2 class="pb-0 mb-0">Elevate Your Space With Our Curated
           Interior Packages.</h2>
 
       </div><!-- End Section Title -->
@@ -219,7 +224,7 @@
                 cursor: pointer;
             }
 </style>
-<div class="p-5">
+<div class="p-5 pt-0">
   <div class="row">
       <!-- Member 1 -->
       <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
@@ -467,7 +472,7 @@
 
 
     <!--how it work-->
-    <section class="services section pb-5">
+    <section class="services section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -787,9 +792,9 @@
                        <img class="position-absolute kit1" src="assets/img/whataboutkitchen/img1.jpg" style="object-fit: cover;">
                    </div>
                </div>
-               <div class="col-lg-4 my-lg-5 py-lg-3 pb-5">
-                   <div class="about-end p-2 pt-2 pb-5" style="background-color:#212121; border-radius: 10px;">
-                       <h1 class="display-5 mb-4 text-white pt-5 pb-3">Moduler Kitchen</h1>
+               <div class="col-lg-5 my-lg-5 py-lg-3 pb-5 z-1">
+                   <div class="about-end" style="background-color:#212121; border-radius: 10px;">
+                       <h2 class="display-5 mb-4 text-white pt-2 pb-3">Moduler Kitchen</h2>
                        <div class="white-bar"></div>
                        <p class="text-white pt-3 pb-3 pl-2 pr-2">Transform your cooking space with a modular kitchen, offering smart storage solutions and sleek, customizable designs for a modern lifestyle.</p>
                        <a href="contact.html" class="btn rounded-pill text-white pl-2 pr-2">Contact Us</a>
@@ -819,9 +824,10 @@
     <div class="p-5 py-5">
       <div class="row gx-0 pb-5 pt-5">
               
-        <div class="col-lg-4 my-lg-5 py-lg-3 z-1">
-            <div class="about-end p-2 pt-2 pb-5 " style="background-color:#212121; border-radius: 10px;">
-                <h1 class="display-5 mb-4 text-white pt-5 pb-3">Semi-Moduler <br/>Kitchen</h1>
+        <div class="col-lg-5 my-lg-5 py-lg-3 z-1">
+            <div class="about-end" style="background-color:#212121; border-radius: 10px;">
+                <h2 class="display-5 mb-4 text-white pt-2 pb-3">Semi-Moduler Kitchen</h2>
+                <div class="white-bar"></div>
                 <p class="text-white pt-3 pb-3 pl-2 pr-2">A semi-modular kitchen combines the efficiency of modular systems with the flexibility of custom design, providing practical storage solutions and adaptable layouts for a stylish and functional cooking space.</p>
                 <a href="contact.html" class="btn rounded-pill text-white pl-2 pr-2">Contact Us</a>
             </div>
@@ -865,7 +871,9 @@
    top: 40px;
    }
 
-  
+  .about-end{
+    padding: 40px 40px;
+  }
    @media(max-width:992px){
     .kit2{
       left: 0;
@@ -1161,7 +1169,7 @@
  <section class="container-fluid contact-form pb-3 scroll-section" id="query">
   <div class="text-center mx-auto pt-5 pb-3 wow fadeIn" data-wow-delay=".3s">
 
-      <h1 class="mb-3 text-decoration-underline text-white" style="font: size 30px;">Contact for Any Query</h1>
+      <h1 class="mb-3 text-white" style="font: size 40px;">Contact for Any Query</h1>
 
   </div>
   <div class="rounded p-5">
@@ -1204,35 +1212,28 @@
               <div class="contact-page">
 
 
-                  <div class="col col-lg-12">
-                      <div class="form-div ">
-                          <form id="myForm" method="POST">
-                            
-                              <input type="text" id="name" class="input" name="name" required
-                                  placeholder="Full Name">
-                                
-                                
-                              <input type="email" class="input" id="email" name="email" required
-                                  placeholder="Email">
-                                
+                <div id="home-contact-form" class=" col-lg-8">
                   
-                              <input type="text" class="input" id="number" name="phone" required
-                                  placeholder="Phone">
-                                
-                                
-                              <input type="text" class="input" id="service" name="service" required
-                                  placeholder="Service Required">
-                                
-                                
-                              <textarea class="input" name="message" id="message" required placeholder="Message"
-                                  rows="3"></textarea>
-                                
-                                
-                              <input type="submit" name="submit" class="form-btn" value="SEND">
-                            
-                          </form>
-                      </div>
-                  </div>
+                  <form>
+                    <div class="form-group">
+                      <label class="text-white" for="name">Name</label>
+                      <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                      <label class="text-white" for="phone">Phone Number</label>
+                      <input type="text" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                    </div>
+      
+                    <div class="form-group">
+                      <label class="text-white" for="location">Site Location</label>
+                      <input type="text" class="form-control" id="location" placeholder="Enter your site location" required>
+                    </div>
+                    <button id="messageForm" action="send_message.php" method="post" type="submit"
+                      class="button btn btn-center">Submit</button>
+                  </form>
+
+
+                </div>
               </div>
 
           </div>
