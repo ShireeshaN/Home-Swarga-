@@ -114,8 +114,11 @@
                     <div class="row">
                     <div class=" col-lg-7 align-content-center">
                        
-                        <h1 style="color: white;font-weight: 800; font-size: 80px;">PAY FOR QUALITY
-                          NOT FOR OUR PROFIT</h1>
+                        <h1 class="main-heading">
+<span class="auto-type"></span>
+                         <!-- <span> PAY FOR QUALITY</span> <br>
+                         <span> NOT FOR OUR PROFIT</span> -->
+                        </h1>
                           <p class="text-white">Quality interiors without the hefty price tag – Affordable Comfort, priceless satisfaction.</p>
                         <!-- <a class="btn btn-style btn-style-2 mt-sm-5 mt-4 book-now" href="./appointment.html">Book Now</a> -->
                     </div>
@@ -152,6 +155,31 @@
         font-size: 70px;
         color: white;
         font-weight: bold;
+      }
+      #home h1.main-heading{
+        color: white;
+        font-weight: 800; 
+        font-size: 60px;
+      }
+      /* h1{
+        white-space: nowrap;
+        overflow-x: hidden;
+        border-right: 2px solid #19184D;
+        width: 0;
+        animation: typing steps(20,end)forwards infinite 10s;
+      }
+      @keyframes typing{
+        0%{
+          width:0;
+        }
+        50%{
+          width:100%;
+        }
+      } */
+      @media(max-width:992px){
+        #home h1.main-heading{
+          font-size: 30px;
+        }
       }
       .sticky-top {
     position: sticky;
@@ -1269,7 +1297,14 @@ background-color: #19184D;
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script>
+    var typed = new Typed(".auto-type",{
+    strings : ["PAY FOR QUALITY", "NOT FOR OUR PROFIT"],
+    typeSpeed : 150,
+    backSpeed : 150,
+    loop : true
+});   
 const open = document.querySelector(".nav-item.drop-down");
 const btn = document.getElementById("plus");
 
