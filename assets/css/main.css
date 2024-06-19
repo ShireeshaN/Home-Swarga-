@@ -35,7 +35,7 @@
   --contrast-color: #ffffff;
 }
 .policycolor{
-  color:#19184D;
+  color:#71b280;
 }
 
 .paras{
@@ -3149,4 +3149,11 @@ padding: 10px;
 .packbud2{
   background: linear-gradient(135deg, #4b6cb7, #71b280, #ff6fd8);;
   border-radius: 10px;
+}
+
+.clintschoose{
+  height:270px;
+  width:400px;
+  text-align: center;
+  
 }
