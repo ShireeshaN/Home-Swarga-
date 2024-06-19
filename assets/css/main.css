@@ -3133,3 +3133,20 @@ padding: 10px;
 }
 
 
+.backss{
+  background-color:  #19184D;
+}
+.packbud{
+  background: linear-gradient(135deg, #ff6fd8, #4b6cb7, #71b280);;
+  border-radius: 10px;
+}
+
+
+.packbud1{
+  background: linear-gradient(135deg, #71b280, #4b6cb7, #ff6fd8);;
+  border-radius: 10px;
+}
+.packbud2{
+  background: linear-gradient(135deg, #4b6cb7, #71b280, #ff6fd8);;
+  border-radius: 10px;
+}
