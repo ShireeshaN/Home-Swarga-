@@ -562,7 +562,7 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="full-home-services.html#painting-electrical">Painting & Electrical</a></li>
+            <li><a href="full-home-services.html#pnt-ele">Painting & Electrical</a></li>
             <li><a href="full-home-services.html#wood-work">Wood Work</a></li>
             <li><a href="full-home-services.html#custom-furniture">Custom Furniture</a></li>
             <li><a href="full-home-services.html#wallpaper">Wallpaper</a></li>
@@ -621,8 +621,16 @@
     </script>
     
     <script>
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function(e) {
+              e.preventDefault();
   
-   </script>
+              document.querySelector(this.getAttribute('href')).scrollIntoView({
+                  behavior: 'smooth'
+              });
+          });
+      });
+  </script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>

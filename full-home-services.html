@@ -181,8 +181,8 @@
             </div>
           </div><!-- End Service Item -->
 
-          <div id="painting-electrical" class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
+          <div  class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div id="pnt-ele" class="service-item position-relative">
               <div >
                 <img class="image" src="assets/img/services/0d565fcee1db553e3f2a192f5bf57834.jpg" />
               </div>
@@ -257,6 +257,10 @@
         <h2>Types Of Kitchens</h2>
         <p>"Discover the perfect kitchen type for your home, from sleek modern designs to charming rustic styles."</p>
       </div>End Section Title -->
+      
+
+      
+    
 
 
 
@@ -264,11 +268,7 @@
 
      
 
-         
-
-     
-
-
+        
 
 
       <section class="builder">
@@ -1540,6 +1540,19 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
 
 </body>
 

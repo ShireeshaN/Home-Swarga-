@@ -725,6 +725,16 @@ background-color: #19184D;
     </section><!-- /Services Section -->
 
 
+    <style>
+       #3d-design, #modular-kitchen, #wardrobe-furniture, #false-ceiling, #painting-lighting, #office-furniture {
+    display: block; /* Ensure sections are not set to display: none; */
+    padding-top: 60px; /* Adjust for any fixed headers */
+}
+
+
+    </style>
+
+
 
     <script>
       document.addEventListener('DOMContentLoaded', function() {
@@ -821,6 +831,29 @@ background-color: #19184D;
           });
       });
   </script>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      // Smooth scrolling for in-page links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function(e) {
+              e.preventDefault();
+              const targetElement = document.querySelector(this.getAttribute('href'));
+              if (targetElement) {
+                  targetElement.scrollIntoView({ behavior: 'smooth' });
+              }
+          });
+      });
+  
+      // Ensure correct positioning on initial page load
+      const initialTargetElement = document.querySelector(window.location.hash);
+      if (initialTargetElement) {
+          initialTargetElement.scrollIntoView();
+      }
+  });
+  </script>
+  
 
     
     <section class="ftco-section ftco-no-pt ftco-no-pb">
@@ -1314,6 +1347,18 @@ btn.addEventListener("click", () => {
  </script>
   <script>
     new WOW().init();
+</script>
+
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+          });
+      });
+  });
 </script>
 
 </body>
