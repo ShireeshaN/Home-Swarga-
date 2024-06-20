@@ -1627,8 +1627,10 @@ section,
 }
 
 .package-card-body {
-  padding: 20px;
+  padding-bottom: 20px;
+  padding-top: 0px;
   height: 100%;
+  border-radius: 10px;
 }
 
 .plan-header {
@@ -3135,25 +3137,47 @@ padding: 10px;
 
 .backss{
   background-color:  #19184D;
+  border-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  text-align: center;
+  padding-top: 10px;
+  height:50px;
 }
-.packbud{
-  background: linear-gradient(135deg, #ff6fd8, #4b6cb7, #71b280);;
+
+.package-card {
+  border: 2px solid blue; /* You can adjust the border width as needed */
   border-radius: 10px;
 }
 
 
-.packbud1{
-  background: linear-gradient(135deg, #71b280, #4b6cb7, #ff6fd8);;
+/* .packbud1{
+  background:white;
   border-radius: 10px;
 }
 .packbud2{
-  background: linear-gradient(135deg, #4b6cb7, #71b280, #ff6fd8);;
+  background: white;
   border-radius: 10px;
-}
+} */
 
 .clintschoose{
   height:270px;
   width:400px;
   text-align: center;
   
+}
+/* linear-gradient(135deg, #4b6cb7, #71b280, #ff6fd8);*/
+
+.backicons{
+  background-color:lightblue;
+  height:32px;
+  width:32px;
+  padding: 2px;
+  border-radius: 2px;
+}
+
+.rightssym{
+  height:20px;
+  width:20px;
+ 
 }
