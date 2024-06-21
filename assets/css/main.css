@@ -3147,6 +3147,11 @@ padding: 10px;
   /* height:50px; */
 }
 
+.justs{
+  color:blue;
+  font-size: 20px;
+}
+
 .package-card {
   border: 2px solid blue; /* You can adjust the border width as needed */
   border-radius: 10px;
