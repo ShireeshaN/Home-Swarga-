@@ -139,6 +139,9 @@
   .top-hero{
   padding-top: 6rem;
 }
+.navbar{
+background-color: #19184D;
+}
 }
     </style>
 
@@ -2761,6 +2764,12 @@ height: 50px;
 <script src="https://cdn.jsdelivr.net/npm/@aos/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
+    const open = document.querySelector(".nav-item.drop-down");
+const btn = document.getElementById("plus");
+
+btn.addEventListener("click", () => {
+  open.classList.toggle("active");
+});
 </script>
 
   <!-- Main JS File -->

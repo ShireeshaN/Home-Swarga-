@@ -3168,6 +3168,11 @@ padding: 10px;
   text-align: center;
   
 }
+@media(max-width:992px){
+  .clintschoose{
+    width: 100%;
+  }
+}
 /* linear-gradient(135deg, #4b6cb7, #71b280, #ff6fd8);*/
 
 .backicons{

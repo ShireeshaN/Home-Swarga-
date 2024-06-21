@@ -33,9 +33,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/lib/animate/animate.min.css" rel="stylesheet">
 
-  <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WOW.js Example</title>
+
+   
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- WOW.js -->
@@ -136,8 +135,11 @@
 padding-top: 3rem;
 }
 @media(max-width:992px){
-.top-hero{
-padding-top: 6rem;
+  .top-hero{
+  padding-top: 6rem;
+}
+.navbar{
+background-color: #19184D;
 }
 }
   </style>
@@ -398,6 +400,12 @@ padding-top: 6rem;
   <script src="assets/lib/wow/wow.min.js"></script>
   <script>
     new WOW().init();
+    const open = document.querySelector(".nav-item.drop-down");
+const btn = document.getElementById("plus");
+
+btn.addEventListener("click", () => {
+  open.classList.toggle("active");
+});
 </script>
 
   <!-- Main JS File -->

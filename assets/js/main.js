@@ -14,7 +14,12 @@
         preloader.remove();
     });
   }
-
+  // const open = document.querySelector(".nav-item.drop-down");
+  // const btn = document.getElementById("plus");
+  
+  // btn.addEventListener("click", () => {
+  //   open.classList.toggle("active");
+  // });
   document.addEventListener('scroll', function() {
     var element = document.querySelector('.navbar');
     if (window.scrollY > 200) {
