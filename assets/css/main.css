@@ -1077,6 +1077,15 @@ section,
   z-index: 1;
 }
 
+@media (max-width:992px){
+  .hero1{
+    height: 100vh;
+  }
+  .hero1 img{
+    object-fit: contain;
+  }
+}
+
 .hero1:before {
   content: "";
   background: rgba(20, 20, 95, 0.7);
