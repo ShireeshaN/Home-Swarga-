@@ -1084,6 +1084,10 @@ section,
   .hero1 img{
     object-fit: contain;
   }
+  .why-we-heading{
+    font-size: 27px;
+    text-align: left;
+  }
 }
 
 .hero1:before {
@@ -2537,7 +2541,7 @@ textarea {
 
 .banners{
   background-image: url("assets/img/whataboutkitchen/img1.jpg");
-  height:200vh;
+  /* height:200vh; */
   object-fit: cover;
   background-size:auto;
   text-align: start;
