@@ -1077,6 +1077,19 @@ section,
   z-index: 1;
 }
 
+@media (max-width:992px){
+  .hero1{
+    height: 100vh;
+  }
+  .hero1 img{
+    object-fit: contain;
+  }
+  .why-we-heading{
+    font-size: 27px;
+    text-align: left;
+  }
+}
+
 .hero1:before {
   content: "";
   background: rgba(20, 20, 95, 0.7);
@@ -2532,7 +2545,7 @@ textarea {
 
 .banners{
   background-image: url("assets/img/whataboutkitchen/img1.jpg");
-  height:200vh;
+  /* height:200vh; */
   object-fit: cover;
   background-size:auto;
   text-align: start;
