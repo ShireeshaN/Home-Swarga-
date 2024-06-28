@@ -1620,6 +1620,7 @@ section,
   border: none;
 }
 
+
 .tab-content {
   border: 2px solid #19184D;
   border-radius: 50px;
@@ -1694,6 +1695,9 @@ section,
 .buy-btn:hover {
   background-color: #C70039;
 }
+
+
+
 
 
 
@@ -2449,7 +2453,7 @@ label {
 
 input[type="text"],
 input[type="email"] {
-  width: 100%;
+  
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
