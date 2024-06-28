@@ -2926,7 +2926,7 @@ textarea {
 
 /* budget friendly btn */
 .btn {
-  --border-color:skyblue;
+  
   --border-width: 0.125em;
   --curve-size: 0.5em;
   --blur: 30px;
