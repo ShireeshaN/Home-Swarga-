@@ -2922,7 +2922,7 @@ textarea {
 
 /* budget friendly btn */
 .btn {
-  --border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
+  --border-color:skyblue;
   --border-width: 0.125em;
   --curve-size: 0.5em;
   --blur: 30px;
@@ -2972,47 +2972,6 @@ textarea {
   }
 }
 
-.ctn::after {
-  background: white;
-  
- 
-  z-index: -1;
-  clip-path: polygon(
-    /* Top-left */ var(--border-width)
-      calc(var(--curve-size) + var(--border-width) * 0.5),
-    calc(var(--curve-size) + var(--border-width) * 0.5) var(--border-width),
-    /* top-right */ calc(100% - var(--border-width)) var(--border-width),
-    calc(100% - var(--border-width))
-      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
-    /* bottom-right 1 */
-      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
-      calc(100% - var(--border-width)),
-    /* bottom-right 2 */ var(--border-width) calc(100% - var(--border-width))
-  );
-  transition: clip-path 500ms;
-}
-
-.ctn:where(:hover, :focus)::after {
-  clip-path: polygon(
-    /* Top-left */ calc(100% - var(--border-width))
-      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
-    calc(100% - var(--border-width)) var(--border-width),
-    /* top-right */ calc(100% - var(--border-width)) var(--border-width),
-    calc(100% - var(--border-width))
-      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
-    /* bottom-right 1 */
-      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
-      calc(100% - var(--border-width)),
-    /* bottom-right 2 */
-      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
-      calc(100% - var(--border-width))
-  );
-  transition: 200ms;
-}
-
-.ctn:where(:hover, :focus) {
-  color: #fff;
-}
 
 /* end to end */
 
