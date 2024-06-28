@@ -230,9 +230,38 @@
               margin: 5% auto;
               padding: 20px;
               border: 1px solid #888;
-              width: 30%;
+             
               /* Decreased width */
             }
+
+            @media (max-width: 576px) {
+      .form-inline-mobile .form-group {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    @media (min-width: 577px) and (max-width: 768px) {
+      .form-inline-md .form-group {
+        display: inline-block;
+        width: 48%;
+        margin-right: 4%;
+      }
+      .form-inline-md .form-group:last-child {
+        margin-right: 0;
+      }
+    }
+
+    @media (min-width: 769px) {
+      .form-inline-lg .form-group {
+        display: inline-block;
+        width: 32%;
+        margin-right: 2%;
+      }
+      .form-inline-lg .form-group:last-child {
+        margin-right: 0;
+      }
+    }
 
             .close {
               color: #aaa;
@@ -386,93 +415,115 @@
 
 
           <!-- The Modal Templates -->
+          
           <div id="modal1" class="modal">
-            <div class="modal-content">
-              <span class="close" data-modal="modal1">&times;</span>
-              <h4>Get Package Offers 2BHK</h4>
-              <form>
-                <div class="form-group">
-                  <label for="name1">Name:</label>
-                  <input type="text" class="form-control" id="name1" required>
-                </div>
-                <div class="form-group">
-                  <label for="phone1">Phone Number:</label>
-                  <input type="tel" class="form-control" id="phone1" required>
-                </div>
-                <div class="form-group">
-                  <label for="location1">Site Location:</label>
-                  <input type="text" class="form-control" id="location1" required>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <span class="close" data-modal="modal1">&times;</span>
+                <h4>Get Package Offers 2BHK</h4>
+                <form>
+                  <div class="form-inline-mobile form-inline-md form-inline-lg">
+                    <div class="form-group">
+                      <label for="name1">Name:</label>
+                      <input type="text" class="form-control" id="name1" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="phone1">Phone Number:</label>
+                      <input type="tel" class="form-control" id="phone1" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="location1">Site Location:</label>
+                      <input type="text" class="form-control" id="location1" required>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                </form>
+              </div>
             </div>
           </div>
+      
 
           <div id="modal2" class="modal">
-            <div class="modal-content">
-              <span class="close" data-modal="modal2">&times;</span>
-              <h4>Get Package Offers 3 BHK</h4>
-              <form>
-                <div class="form-group">
-                  <label for="name2">Name:</label>
-                  <input type="text" class="form-control" id="name2" required>
-                </div>
-                <div class="form-group">
-                  <label for="phone2">Phone Number:</label>
-                  <input type="tel" class="form-control" id="phone2" required>
-                </div>
-                <div class="form-group">
-                  <label for="location2">Site Location:</label>
-                  <input type="text" class="form-control" id="location2" required>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <span class="close" data-modal="modal2">&times;</span>
+                <h4>Get Package Offers 3BHK</h4>
+                <form>
+                  <div class="form-inline-mobile form-inline-md form-inline-lg">
+                    <div class="form-group">
+                      <label for="name2">Name:</label>
+                      <input type="text" class="form-control" id="name2" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="phone2">Phone Number:</label>
+                      <input type="tel" class="form-control" id="phone2" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="location2">Site Location:</label>
+                      <input type="text" class="form-control" id="location2" required>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                </form>
+              </div>
             </div>
           </div>
 
           <div id="modal3" class="modal">
-            <div class="modal-content">
-              <span class="close" data-modal="modal3">&times;</span>
-              <h4>Get Package Offers Villa/Home</h4>
-              <form>
-                <div class="form-group">
-                  <label for="name3">Name:</label>
-                  <input type="text" class="form-control" id="name3" required>
-                </div>
-                <div class="form-group">
-                  <label for="phone3">Phone Number:</label>
-                  <input type="tel" class="form-control" id="phone3" required>
-                </div>
-                <div class="form-group">
-                  <label for="location3">Site Location:</label>
-                  <input type="text" class="form-control" id="location3" required>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <span class="close" data-modal="modal3">&times;</span>
+                <h4>Get Package Offers Villa/Home</h4>
+                <form>
+                  <div class="form-inline-mobile form-inline-md form-inline-lg">
+                    <div class="form-group">
+                      <label for="name3">Name:</label>
+                      <input type="text" class="form-control" id="name3" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="phone3">Phone Number:</label>
+                      <input type="tel" class="form-control" id="phone3" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="location3">Site Location:</label>
+                      <input type="text" class="form-control" id="location3" required>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                </form>
+              </div>
             </div>
           </div>
 
+
+
           <div id="modal4" class="modal">
-            <div class="modal-content">
-              <span class="close" data-modal="modal4">&times;</span>
-              <h4>Get Package Offers Commercial</h4>
-              <form>
-                <div class="form-group">
-                  <label for="name4">Name:</label>
-                  <input type="text" class="form-control" id="name4" required>
-                </div>
-                <div class="form-group">
-                  <label for="phone4">Phone Number:</label>
-                  <input type="tel" class="form-control" id="phone4" required>
-                </div>
-                <div class="form-group">
-                  <label for="location4">Site Location:</label>
-                  <input type="text" class="form-control" id="location4" required>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <span class="close" data-modal="modal4">&times;</span>
+                <h4>Get Package Offers Commercial</h4>
+                <form>
+                  <div class="form-inline-mobile form-inline-md form-inline-lg">
+                    <div class="form-group">
+                      <label for="name4">Name:</label>
+                      <input type="text" class="form-control" id="name4" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="phone4">Phone Number:</label>
+                      <input type="tel" class="form-control" id="phone4" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="location4">Site Location:</label>
+                      <input type="text" class="form-control" id="location4" required>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                </form>
+              </div>
             </div>
           </div>
+
+
 
           <script>
             // Get all buttons that open modals
@@ -532,7 +583,7 @@
               <!-- <a href="#" class="stretched-link">
                 
               </a> -->
-              <p class="fst-italic" style="text-align: justify;"><strong>Where we're dedicated to crafting spaces that
+              <p class="" style="text-align: justify;"><strong>Where we're dedicated to crafting spaces that
                   inspire and delight.
                   I'm thrilled to be your guide on this journey of transforming your space into something truly special.
                   Our initial meeting is all about understanding your unique vision, needs, and desires for your space.
@@ -552,7 +603,7 @@
               <h3>Package Briefing</h3>
               <!-- <a href="service.html" class="stretched-link">
               </a> -->
-              <p class="fst-italic" style="text-align: justify;"><strong>At Home Swarga, we specialize in bespoke
+              <p class="" style="text-align: justify;"><strong>At Home Swarga, we specialize in bespoke
                   interior design packages, crafted to cater uniquely to each client. Our priority is to
                   understand your vision and preferences through personalized consultations. Whether it's a living room
                   makeover,
@@ -576,7 +627,7 @@
               <!-- <a href="#" class="stretched-link">
                
               </a> -->
-              <p class="fst-italic" style="text-align: justify;"><strong>We start by visiting your space to understand
+              <p class="" style="text-align: justify;"><strong>We start by visiting your space to understand
                   its layout and unique elements.
                   Tailoring our approach to your vision and specific requirements, we provide expert guidance and
                   maintain close collaboration
@@ -602,7 +653,7 @@
               <!-- <a href="#" class="stretched-link">
                 
               </a> -->
-              <p class="fst-italic" style="text-align: justify;"><strong>The design execution phase turns concepts into
+              <p class="" style="text-align: justify;"><strong>The design execution phase turns concepts into
                   reality with
                   meticulous implementation. Our skilled team ensures precision in material sourcing, furniture
                   acquisition, and
@@ -625,7 +676,7 @@
               <h3>Work Begin</h3>
               <!-- <a href="service.html" class="stretched-link">
               </a> -->
-              <p class="fst-italic" style="text-align: justify;"><strong>At Home Swarga, every project starts with
+              <p class="" style="text-align: justify;"><strong>At Home Swarga, every project starts with
                   inspiration and a
                   commitment to excellence. As we begin, our dedicated team brings expertise and passion to transform
                   your
@@ -650,7 +701,7 @@
               <!-- <a href="#" class="stretched-link">
                
               </a> -->
-              <p class="fst-italic" style="text-align: justify;"><strong>At Home Swarga, our collaborative journey
+              <p class="" style="text-align: justify;"><strong>At Home Swarga, our collaborative journey
                   concludes
                   with the project handover, symbolizing the transformation of your space. Every detail, from
                   furnishings to decor placement,
@@ -683,7 +734,7 @@
         <span class="">About Us</span>
         <!-- <h2 class="text-white about-header">About Us<br></h2> -->
       </div><!-- End Section Title -->
-      <div class="container content-top">
+      <div class="container content-top pb-4">
         <div class="row gy-4">
           <div class="col-lg-6 order-1 order-lg-2 pb-5" data-aos="fade-up" data-aos-delay="100">
             <img src="assets/img/about-page-imgs/aboutsimgs.jpg" class="img-fluid" alt="">
@@ -735,7 +786,7 @@
                 <p><strong>Transform your space with 3D DESIGN, you’ll save time, money, and headaches by ensuring your
                     vision
                     comes to life exactly as you imagined.</strong></p>
-                <a href="#" class="read-more text-center"><span>Get Package Details</span><i
+                <a href="index.html#home-contact-form" class="read-more text-center"><span>Get Package Details</span><i
                     class="bi bi-arrow-right"></i></a>
               </div>
             </div>
@@ -748,7 +799,7 @@
                 <p><strong>Elevate your home interior to the next level with a modular kitchen! Say goodbye to cluttered
                     spaces and
                     hello to organized, functional, and stylish living.</strong></p>
-                <a href="#" class="read-more"><span>Get Package Details</span><i class="bi bi-arrow-right"></i></a>
+                <a href="index.html#home-contact-form" class="read-more"><span>Get Package Details</span><i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
             <div class="swiper-slide" id="wardrobe-furniture">
@@ -760,7 +811,7 @@
                 <p><strong>Introducing WARDROBE – your ultimate solution to stylish and organized spaces! Our wardrobe
                     designs are
                     crafted to elevate your storage game while adding a touch of elegance to your room.</strong></p>
-                <a href="#" class="read-more"><span>Get Package Details</span><i class="bi bi-arrow-right"></i></a>
+                <a href="index.html#home-contact-form" class="read-more"><span>Get Package Details</span><i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
             <div class="swiper-slide" id="false-ceiling">
@@ -772,7 +823,7 @@
                 <p><strong>Transform your space with elegance and sophistication using our False Ceiling design. Elevate
                     your
                     surroundings with a touch of luxury and modernity.</strong></p>
-                <a href="#" class="read-more"><span>Get Package Details</span><i class="bi bi-arrow-right"></i></a>
+                <a href="index.html#home-contact-form" class="read-more"><span>Get Package Details</span><i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
             <div class="swiper-slide" id="painting-lighting">
@@ -784,7 +835,7 @@
                 <p><strong>Transform your home with the perfect balance of painting and lighting. Discover how the right
                     hues can
                     breathe life into your space, while strategic lighting choices can create ambiance.</strong></p>
-                <a href="#" class="read-more"><span>Get Package Details</span><i class="bi bi-arrow-right"></i></a>
+                <a href="index.html#home-contact-form" class="read-more"><span>Get Package Details</span><i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
             <div class="swiper-slide" id="office-furniture">
@@ -796,7 +847,7 @@
                 <p><strong>Step into a world where your office space reflects your professionalism and style as much as
                     your home
                     does.</strong></p>
-                <a href="#" class="read-more"><span>Get Package Details</span><i class="bi bi-arrow-right"></i></a>
+                <a href="index.html#home-contact-form" class="read-more"><span>Get Package Details</span><i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
             <!-- Add more service items as needed -->
@@ -1013,46 +1064,42 @@
             </div>
 
             <style>
-              .white-bar {
-                position: relative;
-                background-color: white;
-                height: 5px;
-                /* Adjust height as needed */
-
-              }
+              
             </style>
-
-
 
           </div>
         </div>
 
       </section>
+      
+
+
+      
       <section class="banners1">
         <div class="container-fluid py-5">
           <div class="p-5 py-5">
             <div class="row gx-0 pb-5 pt-5">
-
-              <div class="col-lg-5 my-lg-5 py-lg-3 z-1">
+              <div class="col-lg-5 my-lg-5 py-lg-3 pb-5 z-1">
                 <div class="about-end" style="background-color:#212121; border-radius: 10px;">
                   <h2 class="display-5 mb-4 text-white pt-2 pb-3">Semi-Moduler Kitchen</h2>
                   <div class="white-bar"></div>
-                  <p class="text-white pt-3 pb-3 pl-2 pr-2">A semi-modular kitchen combines the efficiency of modular
-                    systems with the flexibility of custom design, providing practical storage solutions and adaptable
-                    layouts for a stylish and functional cooking space.</p>
+                  <p class="text-white pt-3 pb-3 pl-2 pr-2">A semi-modular kitchen combines the efficiency of modular systems with the
+                    flexibility of custom design, providing practical storage solutions and adaptable layouts for a
+                    stylish and functional cooking space.</p>
                   <a href="contact.html" class="btn rounded-pill text-white pl-2 pr-2">Contact Us</a>
                 </div>
               </div>
-              <div class="col-lg-6 pl-5">
-                <div class="position-relative h-100 pl-5">
-                  <img class="kit2" src="assets/img/whataboutkitchen/img2.jpg" style="object-fit: cover;">
+              <div class="col-lg-6">
+                <div class="position-relative h-100">
+                  <img class="kit1" src="assets/img/whataboutkitchen/img2.jpg" style="object-fit: cover;">
                 </div>
               </div>
+              
             </div>
           </div>
         </div>
-
       </section>
+      
       <style>
         .banners {
           background-image: url("assets/img/whataboutkitchen/img1.jpg");
@@ -1071,11 +1118,25 @@
           text-align: start;
           background-position: center;
         }
+        .white-bar {
+                position: relative;
+                background-color: white;
+                height: 5px;
+                /* Adjust height as needed */
 
-        .kit1 {
-          height: 500px;
-          width: 100%;
-        }
+              }
+              .kit1 {
+    height: 100%; /* Ensures image covers container height */
+    width: 100%; /* Ensures image covers container width */
+    object-fit: cover; /* Ensures the image covers the entire container */
+  }
+
+  @media (max-width: 768px) {
+    .kit1 {
+      height: auto; /* Ensures image height adjusts as per its aspect ratio */
+      max-width: 100%; /* Ensures image doesn't exceed container width */
+    }
+  }
 
         .kit2 {
           height: 500px;
@@ -1086,15 +1147,18 @@
         }
 
         .about-end {
-          padding: 40px 40px;
-        }
+    background-color: #212121;
+    border-radius: 10px;
+    padding: 20px; /* Adjust padding as needed */
+  }
 
-        @media(max-width:992px) {
-          .kit2 {
-            left: 0;
-            top: -400px;
-          }
-        }
+  @media (max-width: 992px) {
+    .about-end {
+      text-align: center; /* Centers content on smaller screens */
+    }
+  }
+
+    
 
         .nk {
           padding-left: 50px;
@@ -1436,7 +1500,7 @@
       </p>
       <div class="credits text-white">
 
-        <spam class="text-white">Designed by</spam> <a href="Thepatternscompany">The Patterns Company</a>
+      
       </div>
     </div>
 
