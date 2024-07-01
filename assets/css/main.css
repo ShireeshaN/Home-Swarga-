@@ -67,6 +67,10 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--default-color);
   background-color: var(--background-color);
@@ -1075,6 +1079,12 @@ section,
   height: 100%;
   object-fit: cover;
   z-index: 1;
+}
+
+.why-we-heading{
+  color: white;
+  font-weight: 800; 
+  font-size: 80px;
 }
 
 @media (max-width:992px){
@@ -2916,7 +2926,7 @@ textarea {
 
 /* budget friendly btn */
 .btn {
-  --border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
+  
   --border-width: 0.125em;
   --curve-size: 0.5em;
   --blur: 30px;
@@ -2966,47 +2976,6 @@ textarea {
   }
 }
 
-.ctn::after {
-  background: white;
-  
- 
-  z-index: -1;
-  clip-path: polygon(
-    /* Top-left */ var(--border-width)
-      calc(var(--curve-size) + var(--border-width) * 0.5),
-    calc(var(--curve-size) + var(--border-width) * 0.5) var(--border-width),
-    /* top-right */ calc(100% - var(--border-width)) var(--border-width),
-    calc(100% - var(--border-width))
-      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
-    /* bottom-right 1 */
-      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
-      calc(100% - var(--border-width)),
-    /* bottom-right 2 */ var(--border-width) calc(100% - var(--border-width))
-  );
-  transition: clip-path 500ms;
-}
-
-.ctn:where(:hover, :focus)::after {
-  clip-path: polygon(
-    /* Top-left */ calc(100% - var(--border-width))
-      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
-    calc(100% - var(--border-width)) var(--border-width),
-    /* top-right */ calc(100% - var(--border-width)) var(--border-width),
-    calc(100% - var(--border-width))
-      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
-    /* bottom-right 1 */
-      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
-      calc(100% - var(--border-width)),
-    /* bottom-right 2 */
-      calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
-      calc(100% - var(--border-width))
-  );
-  transition: 200ms;
-}
-
-.ctn:where(:hover, :focus) {
-  color: #fff;
-}
 
 /* end to end */
 
@@ -3026,9 +2995,9 @@ padding: 10px;
 
 
 /* reviews */
-.container {
+/* .container {
   padding: 20px;
-}
+} */
 
 .reviews-container-wrapper {
   overflow: hidden;
@@ -3215,5 +3184,4 @@ padding: 10px;
   width:250px;
   text-align: center;
 }
-
 
