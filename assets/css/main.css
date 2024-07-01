@@ -3185,38 +3185,6 @@ padding: 10px;
   text-align: center;
 }
 
-/* General styles */
-.contact-form .text-white {
-  color: #fff !important;
-}
 
-.contact-form .form-group {
-  margin-bottom: 1rem;
-}
-
-.contact-form .button {
-  background-color: #007bff;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 0.25rem;
-}
-
-.contact-form .button:hover {
-  background-color: #0056b3;
-}
-
-/* Styles to prevent email address word-break */
-.contact-form a {
-  word-break: break-all;
-}
-
-@media (max-width: 767.98px) {
-  /* Specific styling for mobile view */
-  .contact-form a {
-      word-break: keep-all;
-      white-space: nowrap;
-  }
-}
 
 
