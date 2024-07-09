@@ -289,3 +289,44 @@ document.addEventListener('DOMContentLoaded', () => {
       container.style.animationPlayState = 'running';
   });
 });
+
+
+//contact form
+
+
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('phone').value;
+    const location = document.getElementById('location').value;
+
+    if (!name || !phone || !location) {
+      alert('Please fill in all fields');
+      return;
+    }
+
+    // Prepare data to send
+    const formData = new FormData();
+    formData.append('name', name);
+    formData.append('phone', phone);
+    formData.append('location', location);
+
+    // Send data using fetch to a server-side script that handles email sending
+    fetch('send_email.php', {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      alert('Form submitted successfully!');
+      document.getElementById('contactForm').reset(); // Reset form fields after successful submission
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      alert('There was a problem submitting your form. Please try again later.');
+    });
+  });
+
