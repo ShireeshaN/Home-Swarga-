@@ -153,9 +153,9 @@
     display: flex;
     justify-content: space-between;
   }
-  .drop a .fa-angle-down{
+  /* .drop a .fa-angle-down{
     display: none;
-  }
+  } */
 }
 
 #plus {
