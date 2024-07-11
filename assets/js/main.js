@@ -6,28 +6,23 @@
 * License: https://bootstrapmade.com/license/
 */
 
-(function() {
-  "use strict";
-  const preloader = document.querySelector('#preloader');
-  if (preloader) {
-    window.addEventListener('load', () => {
-        preloader.remove();
-    });
-  }
-  // const open = document.querySelector(".nav-item.drop-down");
-  // const btn = document.getElementById("plus");
+// (function() {
+//   "use strict";
+//   const preloader = document.querySelector('#preloader');
+//   if (preloader) {
+//     window.addEventListener('load', () => {
+//         preloader.remove();
+//     });
+//   }
   
-  // btn.addEventListener("click", () => {
-  //   open.classList.toggle("active");
-  // });
-  document.addEventListener('scroll', function() {
-    var element = document.querySelector('.navbar');
-    if (window.scrollY > 200) {
-        element.classList.add('scroll');
-    } else {
-        element.classList.remove('scroll');
-    }
-});
+//   document.addEventListener('scroll', function() {
+//     var element = document.querySelector('.navbar');
+//     if (window.scrollY > 200) {
+//         element.classList.add('scroll');
+//     } else {
+//         element.classList.remove('scroll');
+//     }
+// });
 
   /**
    * Apply .scrolled class to the body as the page is scrolled down
