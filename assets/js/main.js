@@ -6,22 +6,22 @@
 * License: https://bootstrapmade.com/license/
 */
 
-// (function() {
-//   "use strict";
-//   const preloader = document.querySelector('#preloader');
-//   if (preloader) {
-//     window.addEventListener('load', () => {
-//        preloader.remove();
-//    });   }
+(function() {
+  "use strict";
+   const preloader = document.querySelector('#preloader');
+   if (preloader) {
+    window.addEventListener('load', () => {
+       preloader.remove();
+   });   }
   
-//  document.addEventListener('scroll', function() {
-//      var element = document.querySelector('.navbar');
-//     if (window.scrollY > 200) {
-//        element.classList.add('scroll');
-//     } else {
-//         element.classList.remove('scroll');
-//     }
-//  });
+  document.addEventListener('scroll', function() {
+      var element = document.querySelector('.navbar');
+    if (window.scrollY > 200) {
+       element.classList.add('scroll');
+    } else {
+        element.classList.remove('scroll');
+    }
+ });
 
 
   /**
