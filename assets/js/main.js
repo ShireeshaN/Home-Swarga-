@@ -61,6 +61,29 @@
 
   });
 
+  document.getElementById("contactForm").addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Get form data
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('phone').value;
+    const location = document.getElementById('location').value;
+
+    // Construct WhatsApp message
+    const message = `Name: ${name}\nPhone Number: ${phone}\nSite Location: ${location}`;
+    const encodedMessage = encodeURIComponent(message);
+
+    // Your WhatsApp number (including country code, without '+' sign)
+    const whatsappNumber = '9063666369';
+
+    // Construct WhatsApp URL
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+    // Open WhatsApp URL
+    window.open(whatsappURL, '_blank');
+    this.reset();;
+  });
+
   /**
    * Toggle mobile nav dropdowns
    */
@@ -289,39 +312,40 @@ document.addEventListener('DOMContentLoaded', () => {
 //contact form
 
 
-  document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();
+  // document.getElementById('contactForm').addEventListener('submit', function(event) {
+  //   event.preventDefault();
 
-    const name = document.getElementById('name').value;
-    const phone = document.getElementById('phone').value;
-    const location = document.getElementById('location').value;
+  //   const name = document.getElementById('name').value;
+  //   const phone = document.getElementById('phone').value;
+  //   const location = document.getElementById('location').value;
 
-    if (!name || !phone || !location) {
-      alert('Please fill in all fields');
-      return;
-    }
+  //   if (!name || !phone || !location) {
+  //     alert('Please fill in all fields');
+  //     return;
+  //   }
 
-    // Prepare data to send
-    const formData = new FormData();
-    formData.append('name', name);
-    formData.append('phone', phone);
-    formData.append('location', location);
+  //   // Prepare data to send
+  //   const formData = new FormData();
+  //   formData.append('name', name);
+  //   formData.append('phone', phone);
+  //   formData.append('location', location);
 
-    // Send data using fetch to a server-side script that handles email sending
-    fetch('send_email.php', {
-      method: 'POST',
-      body: formData
-    })
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-      alert('Form submitted successfully!');
-      document.getElementById('contactForm').reset(); // Reset form fields after successful submission
-    })
-    .catch(error => {
-      console.error('Error:', error);
-      alert('There was a problem submitting your form. Please try again later.');
-    });
-  });
+  //   // Send data using fetch to a server-side script that handles email sending
+  //   fetch('send_email.php', {
+  //     method: 'POST',
+  //     body: formData
+  //   })
+  //   .then(response => {
+  //     if (!response.ok) {
+  //       throw new Error('Network response was not ok');
+  //     }
+  //     alert('Form submitted successfully!');
+  //     document.getElementById('contactForm').reset(); // Reset form fields after successful submission
+  //   })
+  //   .catch(error => {
+  //     console.error('Error:', error);
+  //     alert('There was a problem submitting your form. Please try again later.');
+  //   });
+  // });
+
 
