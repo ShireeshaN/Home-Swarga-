@@ -3042,6 +3042,6 @@ textarea {
   text-align: center;
 }
 
-
-
-
+.modal-text{
+  color: #000;
+}
