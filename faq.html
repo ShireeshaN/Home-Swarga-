@@ -345,7 +345,7 @@ background-color: #19184D;
 
 
 
-     <!-- Contact Start -->
+      <!-- Contact Start -->
  <section class="container-fluid contact-form pb-3 scroll-section" id="query">
   <div class="text-center mx-auto pt-5 pb-3 wow fadeIn" data-wow-delay=".3s">
 
@@ -362,7 +362,7 @@ background-color: #19184D;
                   </div>
                   <div class="ms-3">
                       <h4 class="text-white">Address</h4>
-                      <a href="https://www.google.com/maps/1m14!1m8!1m3!1d30459." target="_blank" class="h5 text-white">DSL ABACUS, IT PARK, Ground Floor, Awfis, Survey Colony, Industrial Development Area, Uppal - 39.</a>
+                      <a href="https://maps.app.goo.gl/tztikTQuZYceVkrK9" target="_blank" class="h5 text-white">DSL ABACUS, IT PARK, Ground Floor, Awfis, Survey Colony, Industrial Development Area, Uppal - 39.</a>
                   </div>
               </div>
               <div class="d-flex  mb-3 p-3 rounded">
@@ -382,7 +382,7 @@ background-color: #19184D;
                   </div>
                   <div class="ms-3">
                       <h4 class="text-white">Email Us</h4>
-                      <a class="h5 text-white"  href="mailto:info@example.com"
+                      <a class="h5 text-white"  href="mailto:hello@homeswarga.com"
                           target="_blank">hello@homeswarga.com</a>
                   </div>
               </div>
@@ -392,34 +392,49 @@ background-color: #19184D;
               <div class="contact-page">
 
 
-                <div id="home-contact-form" class=" col-lg-8">
-                  
-                  <form>
+                <div id="home-contact-form" class="col-lg-8">
+                  <form onsubmit="return validatePhoneNumber()">
                     <div class="form-group">
                       <label class="text-white" for="name">Name</label>
                       <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
                     </div>
                     <div class="form-group">
                       <label class="text-white" for="phone">Phone Number</label>
-                      <input type="text" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                      <input type="text" class="form-control" id="phone" placeholder="Enter your phone number" required maxlength="10">
+                      <small id="phoneError" class="form-text text-danger" style="display: none;">Please enter a valid 10-digit phone number.</small>
                     </div>
-      
                     <div class="form-group">
                       <label class="text-white" for="location">Site Location</label>
                       <input type="text" class="form-control" id="location" placeholder="Enter your site location" required>
                     </div>
-                    <button id="messageForm" action="send_message.php" method="post" type="submit"
-                      class="button btn btn-center">Submit</button>
+                    <button id="messageForm" action="send_message.php" method="post" type="submit" class="button btn btn-center">Submit</button>
                   </form>
-
-
-                </div>
+                </div>
+                
               </div>
 
           </div>
       </div>
   </div>
 </section>
+
+
+<script>
+  function validatePhoneNumber() {
+    var phone = document.getElementById("phone").value;
+    var phoneError = document.getElementById("phoneError");
+    
+    // Check if the phone number is exactly 10 digits and is numeric
+    if (phone.length === 10 && /^\d{10}$/.test(phone)) {
+      phoneError.style.display = "none"; // Hide error message
+      return true;
+    } else {
+      phoneError.style.display = "block"; // Show error message
+      return false;
+    }
+  }
+  </script>
+    <!-- Contact End -->
 
   <div class="row">
       <div class="col-12">
@@ -430,7 +445,7 @@ background-color: #19184D;
       </div>
   </div>
 
-<!-- Contact End -->
+
   </main>
 
   <footer  class="footer position-relative">
