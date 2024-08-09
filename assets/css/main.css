@@ -3042,6 +3042,23 @@ textarea {
   text-align: center;
 }
 
+.modal-text{
+  color: #000;
+}
+.patterns-link{
+  color: #19184d;
+}
 
+.patterns-link:hover{
+  color: #19184D !important;
+}
 
+.contact-form .rounded{
+  padding: 3rem !important;
+}
 
+@media (max-width:992px){
+  .contact-form .rounded{
+    padding: 0 !important;
+  }
+}

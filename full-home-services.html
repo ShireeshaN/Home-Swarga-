@@ -2652,7 +2652,7 @@ height: 50px;
       const encodedMessage = encodeURIComponent(message);
 
       // Your WhatsApp number (including country code, without '+' sign)
-      const whatsappNumber = '7729052259';
+      const whatsappNumber = '9063666369';
 
       // Construct WhatsApp URL
       const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
@@ -2661,6 +2661,29 @@ height: 50px;
       window.open(whatsappURL, '_blank');
       this.reset();
     });
+
+    document.getElementById("contactForm").addEventListener("submit", function (event) {
+  event.preventDefault(); // Prevent form submission
+
+  // Get form data
+  const name = document.getElementById('name').value;
+  const phone = document.getElementById('phone').value;
+  const location = document.getElementById('location').value;
+
+  // Construct WhatsApp message
+  const message = `Name: ${name}\nPhone Number: ${phone}\nSite Location: ${location}`;
+  const encodedMessage = encodeURIComponent(message);
+
+  // Your WhatsApp number (including country code, without '+' sign)
+  const whatsappNumber = '9063666369';
+
+  // Construct WhatsApp URL
+  const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+  // Open WhatsApp URL
+  window.open(whatsappURL, '_blank');
+  this.reset();;
+});
     
   </script>
 
