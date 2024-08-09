@@ -3062,3 +3062,20 @@ textarea {
     padding: 0 !important;
   }
 }
+
+
+.custom-underline {
+  display: inline-block;
+  position: relative;
+  /* Adjust font size as needed */
+}
+
+.custom-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px; /* Thickness of the underline */
+  background: linear-gradient(to right, transparent 10%, currentColor 10%, currentColor 90%, transparent 90%);
+}
