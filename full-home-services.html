@@ -304,28 +304,46 @@
                   ensuring that construction processes are streamlined, costs are minimized, and quality is maximized
                   for a hassle-free building experience.</p>
 
-                <div class="col col-lg-4">
-                  <div class="form-div ">
-                    <form id="myForm" method="POST">
-                      <div class="mb-2">
-                        <input type="text" id="fullName" class="input" name="name" required placeholder="Full Name">
-                      </div>
-                      <div class="mb-2">
-                        <input type="text" class="input" id="number" name="phone" required placeholder="Phone">
-                        <div class="pt-3">
-                          <button id="messageForm" action="send_message.php" method="post" type="submit"
-                            class="button btn btn-primary btn-center">Submit</button>
+                  <div class="col col-lg-4">
+                    <div class="form-div">
+                      <form id="myForm" method="POST" onsubmit="return validatePhoneNumber()">
+                        <div class="mb-2">
+                          <input type="text" id="fullName" class="input" name="name" required placeholder="Full Name">
                         </div>
-                      </div>
-                    </form>
+                        <div class="mb-2">
+                          <input type="text" class="input" id="number" name="phone" required placeholder="Phone" maxlength="10">
+                          <small id="phoneError" class="form-text text-danger" style="display: none;">Please enter a valid 10-digit phone number.</small>
+                        </div>
+                        <div class="pt-3">
+                          <button id="messageForm" action="send_message.php" method="post" type="submit" class="button btn btn-primary btn-center">Submit</button>
+                        </div>
+                      </form>
+                    </div>
                   </div>
-                </div>
+                  
 
               </div>
             </div>
           </div>
         </div>
     </section>
+
+
+    <script>
+      function validatePhoneNumber() {
+        var phone = document.getElementById("number").value;
+        var phoneError = document.getElementById("phoneError");
+      
+        // Check if the phone number is exactly 10 digits and is numeric
+        if (phone.length === 10 && /^\d{10}$/.test(phone)) {
+          phoneError.style.display = "none"; // Hide error message
+          return true; // Allow form submission
+        } else {
+          phoneError.style.display = "block"; // Show error message
+          return false; // Prevent form submission
+        }
+      }
+      </script>
 
     <style>
       .builder {
